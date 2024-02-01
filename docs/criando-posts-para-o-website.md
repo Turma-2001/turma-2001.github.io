@@ -75,13 +75,16 @@ Os arquivos irão ser organizados da seguinte forma:
 #### Exemplos:
 ```
 biologia/
-  celula/
-    celulas-tronco.md
-    nucleo.md
-  aquecimento-global.md
+  assuntos/
+    celula/
+      celulas-tronco.md
+      nucleo.md
+    aquecimento-global.md
+  atividades/
+    atividade-1.md
+    atividade-2.md
   index.md
 ```
-
 ## Exemplos de layouts de posts:
 - https://github.blog/category/engineering/
 - https://github.blog/2024-01-22-10-unexpected-ways-to-use-github-copilot/

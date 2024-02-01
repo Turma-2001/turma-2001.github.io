@@ -1,18 +1,11 @@
-# Trash
-.trash/
-
-# Obsidian vault files 
-.obsidian/
-
-# (Neo)VIM configuration stuff
-.vim/
-
-# JetBrains IDEs stuff
-.idea/
-
-# Development files
-node_modules/
-.env
-
-# yarnpkg stuff
-yarn-error.log
+.DS_Store
+.gitignore
+node_modules
+public
+prof
+tsconfig.tsbuildinfo
+.obsidian
+.quartz-cache
+private/
+.replit
+replit.nix
