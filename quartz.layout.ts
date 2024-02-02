@@ -1,5 +1,6 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import GitHubIcon from "./quartz/components/icons/GitHubIcon"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -7,7 +8,10 @@ export const sharedPageComponents: SharedLayout = {
   header: [],
   footer: Component.Footer({
     links: {
-      "GitHub": { url: "https://github.com/Turma-2001/library" }
+      "GitHub": {
+        url: "https://github.com/Turma-2001/biblioteca",
+        icon: GitHubIcon
+      }
     },
   }),
 }
@@ -23,12 +27,11 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer()),
+    Component.DesktopOnly(Component.Explorer({ title: "Assuntos e artigos" })),
   ],
   right: [
     Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
   ],
 }
 

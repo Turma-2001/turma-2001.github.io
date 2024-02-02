@@ -42,9 +42,10 @@ button#explorer {
 
 #explorer-content {
   list-style: none;
-  overflow: hidden;
+  overflow: scroll;
+  height: 100%;
   max-height: none;
-  transition: max-height 0.35s ease;
+  transition: max-height 0.2s ease;
   margin-top: 0.5rem;
 
   &.collapsed > .overflow::after {
@@ -59,6 +60,7 @@ button#explorer {
       max-height 0.35s ease,
       transform 0.35s ease,
       opacity 0.2s ease;
+
     & li > a {
       color: var(--dark);
       opacity: 0.75;

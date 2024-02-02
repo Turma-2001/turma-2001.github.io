@@ -31,9 +31,9 @@ const defaultOptions: GraphOptions = {
     scale: 1.1,
     repelForce: 0.5,
     centerForce: 0.3,
-    linkDistance: 30,
-    fontSize: 0.6,
-    opacityScale: 1,
+    linkDistance: 48,
+    fontSize: 0.7,
+    opacityScale: 8,
     showTags: true,
     removeTags: [],
   },
@@ -45,8 +45,8 @@ const defaultOptions: GraphOptions = {
     repelForce: 0.5,
     centerForce: 0.3,
     linkDistance: 30,
-    fontSize: 0.6,
-    opacityScale: 1,
+    fontSize: 1,
+    opacityScale: 8,
     showTags: true,
     removeTags: [],
   },
@@ -58,7 +58,8 @@ export default ((opts?: GraphOptions) => {
     const globalGraph = { ...defaultOptions.globalGraph, ...opts?.globalGraph }
     return (
       <div class={classNames(displayClass, "graph")}>
-        <h3>Graph View</h3>
+        <h3>Gráfico de links relacionados</h3>
+
         <div class="graph-outer">
           <div id="graph-container" data-cfg={JSON.stringify(localGraph)}></div>
           <svg

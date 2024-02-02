@@ -410,7 +410,8 @@ p {
 }
 
 .table-container {
-  overflow-x: auto;
+  overflow-x: scroll;
+  word-wrap: normal;
 
   & > table {
     margin: 1rem;
@@ -419,11 +420,8 @@ p {
 
     th,
     td {
+      word-wrap: normal;
       min-width: 75px;
-    }
-
-    & > * {
-      line-height: 2rem;
     }
   }
 }
@@ -440,9 +438,6 @@ td {
 
 tr {
   border-bottom: 1px solid var(--lightgray);
-  &:last-child {
-    border-bottom: none;
-  }
 }
 
 img {

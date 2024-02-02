@@ -3,20 +3,20 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Biblioteca 2001",
+    pageTitle: "Turma 2001",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    baseUrl: "library2001.github.io",
+    baseUrl: "turma-2001.github.io/biblioteca",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
       typography: {
-        header: "Schibsted Grotesk",
+        header: "PT Sans",
         body: "PT Serif",
-        code: "IBM Plex Mono",
+        code: "PT Mono",
       },
       colors: {
         lightMode: {

@@ -1,11 +1,11 @@
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
-import 'boxicons'
 import style from "./styles/footer.scss"
 import { version } from "../../package.json"
+import { JSX } from "preact/jsx-runtime";
 
 interface Link {
   url: string;
-  icon: string;
+  icon: () => JSX.Element;
 }
 
 interface Options {
@@ -19,10 +19,10 @@ export default ((opts?: Options) => {
     return (
       <footer class={`${displayClass ?? ""}`}>
         <hr />
-        <ul>
+        <ul className='links'>
           {Object.entries(links).map(([text, link]) => (
-            <li>
-              <i className={``}></i>
+            <li className='link'>
+              <div class='icon'>{link?.icon?.()}</div>
               <a href={link.url}>{text}</a>
             </li>
           ))}

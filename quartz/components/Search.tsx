@@ -4,18 +4,16 @@ import style from "./styles/search.scss"
 import script from "./scripts/search.inline"
 import { classNames } from "../util/lang"
 
-export interface SearchOptions {
-  enablePreview: boolean,
-  onlyIcon: boolean
+export interface PesquisarOptions {
+  enablePreview: boolean
 }
 
-const defaultOptions: SearchOptions = {
+const defaultOptions: PesquisarOptions = {
   enablePreview: true,
-  onlyIcon: false
 }
 
-export default ((userOpts?: Partial<SearchOptions>) => {
-  function Search({ displayClass }: QuartzComponentProps) {
+export default ((userOpts?: Partial<PesquisarOptions>) => {
+  function Pesquisar({ displayClass }: QuartzComponentProps) {
     const opts = { ...defaultOptions, ...userOpts }
 
     return (
@@ -28,15 +26,16 @@ export default ((userOpts?: Partial<SearchOptions>) => {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 19.9 19.7"
           >
-            <title id="title">Search</title>
-            <desc id="desc">Search</desc>
+            <title id="title">Pesquisar</title>
+            <desc id="desc">Pesquisar</desc>
             <g class="search-path" fill="none">
               <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" />
               <circle cx="8" cy="8" r="7" />
             </g>
           </svg>
 
-          <p className='label'>Search</p>
+          <div></div>
+          <p class='desktop-only'>Pesquisar</p>
         </div>
         <div id="search-container">
           <div id="search-space">
@@ -45,8 +44,8 @@ export default ((userOpts?: Partial<SearchOptions>) => {
               id="search-bar"
               name="search"
               type="text"
-              aria-label="Search for something"
-              placeholder="Search for something"
+              aria-label="Pesquisar algo"
+              placeholder="Pesquisar algo"
             />
             <div id="search-layout" data-preview={opts.enablePreview}></div>
           </div>
@@ -55,8 +54,8 @@ export default ((userOpts?: Partial<SearchOptions>) => {
     )
   }
 
-  Search.afterDOMLoaded = script
-  Search.css = style
+  Pesquisar.afterDOMLoaded = script
+  Pesquisar.css = style
 
-  return Search
+  return Pesquisar
 }) satisfies QuartzComponentConstructor
