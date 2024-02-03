@@ -22,23 +22,23 @@ export const Latex: QuartzTransformerPlugin<Options> = (opts?: Options) => {
       }
     },
     externalResources() {
-      if (engine === "katex") {
-        return {
-          css: [
-            // base css
-            "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css",
-          ],
-          js: [
-            {
-              // fix copy behaviour: https://github.com/KaTeX/KaTeX/blob/main/contrib/copy-tex/README.md
-              src: "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/copy-tex.min.js",
-              loadTime: "afterDOMReady",
-              contentType: "external",
-            },
-          ],
-        }
-      } else {
+      if (engine !== "katex") {
         return {}
+      }
+
+      return {
+        css: [
+          // base css
+          "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css",
+        ],
+        js: [
+          {
+            // fix copy behaviour: https://github.com/KaTeX/KaTeX/blob/main/contrib/copy-tex/README.md
+            src: "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/copy-tex.min.js",
+            loadTime: "afterDOMReady",
+            contentType: "external",
+          },
+        ],
       }
     },
   }
