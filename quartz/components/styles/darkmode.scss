@@ -37,3 +37,7 @@
     display: none;
   }
 }
+
+:root[saved-theme="dark"] .follow-theme {
+  filter: invert(100%);
+}
