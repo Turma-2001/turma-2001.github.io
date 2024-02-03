@@ -1,7 +1,6 @@
-import { pathToRoot } from "../../util/path"
 import { QuartzComponentConstructor, QuartzComponentProps } from "../types"
 
-function NotFound({ fileData, cfg }: QuartzComponentProps) {
+function NotFound({ }: QuartzComponentProps) {
   return (
     <article class="popover-hint">
       <h1>Conteúdo não encontrado</h1>
