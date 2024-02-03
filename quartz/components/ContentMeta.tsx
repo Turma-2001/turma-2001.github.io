@@ -2,6 +2,7 @@ import { formatDate, getDate } from "./Date"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import readingTime from "reading-time"
 import { classNames } from "../util/lang"
+import { FullSlug, pathToRoot } from "../util/path"
 
 interface ContentMetaOptions {
   /**
@@ -17,9 +18,9 @@ const defaultOptions: ContentMetaOptions = {
 export default ((opts?: Partial<ContentMetaOptions>) => {
   // Merge options with defaults
   const options: ContentMetaOptions = { ...defaultOptions, ...opts }
-
   function ContentMetadata({ cfg, fileData, displayClass }: QuartzComponentProps) {
     const text = fileData.text
+    const rootDir = pathToRoot((fileData.slug ?? '/') as FullSlug)
 
     if (text) {
       const segments: string[] = []
@@ -34,7 +35,15 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
         segments.push(timeTaken)
       }
 
-      return <p class={classNames(displayClass, "content-meta")}>{segments.join(", ")}</p>
+      return <div class='content-meta-base'>
+        <p class={classNames(displayClass, "content-meta")}>{segments.join(", ")}</p>
+        {rootDir == '.' || (
+          <a href={rootDir} class='back'>
+            <i class='bx bx-14 bx-arrow-back'></i>
+            <span class='text'>Voltar a página inicial</span>
+          </a>
+        )}
+      </div>
     } else {
       return null
     }
@@ -42,8 +51,31 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
 
   ContentMetadata.css = `
   .content-meta {
-    margin-top: 0;
+    margin: 4px 0;
     color: var(--gray);
+  }
+  
+  .content-meta-base {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8px;
+
+    .back {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .bx {
+        font-size: 18px;
+      }
+
+      .text {
+        margin: 0 8px;
+        font-size: 15px;
+      }
+    }
   }
   `
   return ContentMetadata

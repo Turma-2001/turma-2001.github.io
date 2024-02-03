@@ -4,7 +4,9 @@ import { BuildCtx } from "../util/ctx"
 
 export function getStaticResourcesFromPlugins(ctx: BuildCtx) {
   const staticResources: StaticResources = {
-    css: [],
+    css: [
+      'https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+    ],
     js: [],
   }
 

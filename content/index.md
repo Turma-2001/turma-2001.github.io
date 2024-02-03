@@ -1,5 +1,6 @@
 ---
-title: Turma 2001 - Índice
+title: Página inicial
+banner: /static/school.png
 ---
 
 ## Horário
