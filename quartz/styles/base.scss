@@ -423,14 +423,14 @@ p {
   word-wrap: normal;
 
   &>table {
-    margin: 1rem;
+    margin: 1rem 0;
     padding: 1.5rem;
     border-collapse: collapse;
 
     th,
     td {
       word-wrap: normal;
-      min-width: 75px;
+      min-width: 96px;
     }
   }
 }
@@ -444,6 +444,7 @@ th {
 td {
   padding: 0.2rem 0.7rem;
 }
+
 
 tr {
   border-bottom: 1px solid var(--lightgray);
@@ -517,4 +518,8 @@ ol.overflow {
   .bx-14 {
     font-size: 14px;
   }
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

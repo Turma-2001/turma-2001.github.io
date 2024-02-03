@@ -15,12 +15,12 @@ banner: /static/school.png
 | 11:15/12:00 | **MATEMÁTICA** | **ARTES** | **LÍNGUA PORTUGUESA** | **ITINERÁRIOS AMAZÔNICOS** | **FILOSOFIA** |
 
 ## Matérias Escolares
-| Ciências Humanas | Ciências da Linguagem | Ciências Exatas      |
-|------------------|-----------------------|----------------------|
-| [[História]]     | [[Inglês]]            | [[Física]]           |
-| [[Geografia]]    | [[Português]]         | [[Química]]          |
-| [[Filosofia]]    | [[Ed. Física]]        | [[Matemática]]       |
-| [[Sociologia]]   | [[Artes]]             | [[Biologia]]         |
+| Ciências Humanas          | Ciências da Linguagem             | Ciências Exatas           |
+|---------------------------|-----------------------------------|---------------------------|
+| [História](/História)     | [Inglês](/Inglês)                 | [Física](/Física)         |
+| [Geografia](/Geografia)   | [Português](/Língua%20Portuguesa) | [Química](/Química)       |
+| [Filosofia](/Filosofia)   | [Ed. Física](/Educação%20Física)  | [Matemática](/Matemática) |
+| [Sociologia](/Sociologia) | [Artes](/Artes)                   | [Biologia](/Biologia)     |
 
 ## Recursos
 - [[|Calendario Escolar]]
