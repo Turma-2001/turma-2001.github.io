@@ -70,6 +70,9 @@ export const FrontMatter: QuartzTransformerPlugin<Partial<Options> | undefined> 
             const cssclasses = coerceToArray(coalesceAliases(data, ["cssclasses", "cssclass"]))
             if (cssclasses) data.cssclasses = cssclasses
 
+            const bannerURL = coerceToArray(coalesceAliases(data, ["banner", "banner-url"]))
+            if (bannerURL) data.banner = bannerURL
+
             // fill in frontmatter
             file.data.frontmatter = data as QuartzPluginData["frontmatter"]
           }
@@ -85,6 +88,7 @@ declare module "vfile" {
       title: string
     } & Partial<{
       tags: string[]
+      banner: string
       aliases: string[]
       description: string
       publish: boolean

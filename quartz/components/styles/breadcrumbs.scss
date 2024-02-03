@@ -9,12 +9,20 @@
 }
 
 .breadcrumb-element {
-  p {
+  .separator {
     margin: 0;
     margin-left: 0.5rem;
     padding: 0;
     line-height: normal;
   }
+
+  .crumb-icon {
+    margin: 0;
+    margin-right: 0.5rem;
+    padding: 0;
+    line-height: normal;
+  }
+
   display: flex;
   flex-direction: row;
   align-items: center;

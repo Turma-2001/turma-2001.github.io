@@ -2,13 +2,11 @@ import { pathToRoot } from "../../util/path"
 import { QuartzComponentConstructor, QuartzComponentProps } from "../types"
 
 function NotFound({ fileData, cfg }: QuartzComponentProps) {
-  const rootDir = pathToRoot(fileData.slug!)
-
   return (
     <article class="popover-hint">
       <h1>Conteúdo não encontrado</h1>
       <p>O conteúdo que você está procurando não foi encontrado, se ele é um link de algum outro arquivo, por favor, avise os administradores do website para resolver.</p>
-      <a href={rootDir}>Voltar a página inicial</a>
+      <a href={'/'}>Voltar a página inicial</a>
     </article>
   )
 }

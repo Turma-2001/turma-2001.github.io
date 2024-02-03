@@ -5,15 +5,12 @@ import { QuartzPluginData } from "../plugins/vfile"
 import { classNames } from "../util/lang"
 
 type CrumbData = {
+  icon?: string
   displayName: string
   path: string
 }
 
 interface BreadcrumbOptions {
-  /**
-   * Symbol between crumbs
-   */
-  spacerSymbol: string
   /**
    * Name of first crumb
    */
@@ -33,8 +30,7 @@ interface BreadcrumbOptions {
 }
 
 const defaultOptions: BreadcrumbOptions = {
-  spacerSymbol: "❯",
-  rootName: "Home",
+  rootName: "Página Inicial",
   resolveFrontmatterTitle: true,
   hideOnRoot: true,
   showCurrentPage: true,
@@ -62,6 +58,9 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
 
     // Format entry for root element
     const firstEntry = formatCrumb(options.rootName, fileData.slug!, "/" as SimpleSlug)
+
+    firstEntry.icon = 'bx bxs-home';
+
     const crumbs: CrumbData[] = [firstEntry]
 
     if (!folderIndex && options.resolveFrontmatterTitle) {
@@ -117,8 +116,9 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
       <nav class={classNames(displayClass, "breadcrumb-container")} aria-label="breadcrumbs">
         {crumbs.map((crumb, index) => (
           <div class="breadcrumb-element">
+            {crumb.icon && (<i class={`crumb-icon ${crumb.icon}`}></i>)}
             <a href={crumb.path}>{crumb.displayName}</a>
-            {index !== crumbs.length - 1 && <p>{` ${options.spacerSymbol} `}</p>}
+            {index !== crumbs.length - 1 && <i class='separator bx bxs-chevron-right'></i>}
           </div>
         ))}
       </nav>

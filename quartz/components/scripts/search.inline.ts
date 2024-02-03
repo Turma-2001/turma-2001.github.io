@@ -66,9 +66,8 @@ function highlight(searchTerm: string, text: string, trim?: boolean) {
     })
     .join(" ")
 
-  return `${startIndex === 0 ? "" : "..."}${slice}${
-    endIndex === tokenizedText.length - 1 ? "" : "..."
-  }`
+  return `${startIndex === 0 ? "" : "..."}${slice}${endIndex === tokenizedText.length - 1 ? "" : "..."
+    }`
 }
 
 const p = new DOMParser()
@@ -321,8 +320,8 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
     removeAllChildren(results)
     if (finalResults.length === 0) {
       results.innerHTML = `<a class="result-card">
-                    <h3>No results.</h3>
-                    <p>Try another search term?</p>
+                    <h3>Sem resultados</h3>
+                    <p>Verifique sua ortografia ou se o assunto está disponível.</p>
                 </a>`
     } else {
       results.append(...finalResults.map(resultToHTML))

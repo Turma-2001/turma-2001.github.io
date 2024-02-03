@@ -9,24 +9,28 @@ ul.section-ul {
 li.section-li {
   margin-bottom: 1em;
 
-  & > .section {
-    display: grid;
-    grid-template-columns: 6em 3fr 1fr;
+  cursor: pointer;
+  background-color: var(--lightgray);
+  padding: 10px 12px 0 12px;
+  border-radius: 8px;
 
-    @media all and (max-width: $mobileBreakpoint) {
-      & > .tags {
-        display: none;
+  &>.section {
+    display: flex;
+    flex-direction: column;
+
+    .information {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      &>.metadata-date {
+        margin: 0;
+        opacity: 0.6;
       }
-    }
 
-    & > .desc > h3 > a {
-      background-color: transparent;
-    }
-
-    & > .meta {
-      margin: 0;
-      flex-basis: 6em;
-      opacity: 0.6;
+      .tags {
+        flex-grow: 1;
+      }
     }
   }
 }
@@ -34,7 +38,8 @@ li.section-li {
 // modifications in popover context
 .popover .section {
   grid-template-columns: 6em 1fr !important;
-  & > .tags {
+
+  &>.tags {
     display: none;
   }
 }

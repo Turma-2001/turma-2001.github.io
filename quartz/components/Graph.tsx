@@ -28,11 +28,11 @@ const defaultOptions: GraphOptions = {
     drag: true,
     zoom: true,
     depth: 1,
-    scale: 1.1,
+    scale: 2,
     repelForce: 0.5,
     centerForce: 0.3,
     linkDistance: 48,
-    fontSize: 0.7,
+    fontSize: 0.5,
     opacityScale: 8,
     showTags: true,
     removeTags: [],
@@ -41,11 +41,11 @@ const defaultOptions: GraphOptions = {
     drag: true,
     zoom: true,
     depth: -1,
-    scale: 0.9,
+    scale: 2,
     repelForce: 0.5,
     centerForce: 0.3,
     linkDistance: 30,
-    fontSize: 1,
+    fontSize: 0.5,
     opacityScale: 8,
     showTags: true,
     removeTags: [],
@@ -71,8 +71,7 @@ export default ((opts?: GraphOptions) => {
             y="0px"
             viewBox="0 0 55 55"
             fill="currentColor"
-            xmlSpace="preserve"
-          >
+            xmlSpace="preserve">
             <path
               d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
 	s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
