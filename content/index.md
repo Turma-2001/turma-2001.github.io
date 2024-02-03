@@ -21,7 +21,7 @@ title: Turma 2001 - Índice
 - [[Sociologia]]
 ### Ciências da Linguagem
 - [[Inglês]]
-- [[Português]]
+- [[Língua Portuguesa]]
 - [[Educação Física]]
 - [[Artes]]
 ### Ciências da Natureza
