@@ -58,7 +58,7 @@ a.internal.tag-link .text {
   text-fill-color: transparent;
   
   background-clip: text !important;
-  background: linear-gradient(145deg, var(--tertiary), var(--secondary));
+  background: linear-gradient(140deg, #D2A8FF 12.09%, #F778BA 42.58%, #FF7B72 84.96%);
 
   font-family: var(--headerFont);
   font-weight: 800;

@@ -2,8 +2,10 @@
 title: Página inicial
 banner: /static/school.png
 ---
+::active-homeworks[]
+
 ## Datas Importantes
-- 06/02/2024 Entrega: [[O Mundo Atual]] Atividade ([[Geografia]])
+- 05/02/2024 Entrega: [[O Mundo Atual]] Atividade ([[Geografia]])
 - 05/02/2024 Entrega: [[Converte Temperatura Atividade]] ([[Física]])
 - 06/02/2024 Entrega: Desenho de arte dos quadradinhos ([[Artes]])
 
@@ -17,8 +19,6 @@ banner: /static/school.png
 | 9:45/10:30 | **LÍNGUA PORTUGUESA** | **FÍSICA** | **HISTÓRIA** | **EDUCAÇÃO FÍSICA** | **ELETIVA** |
 | 10:30/11:15 | **MATEMÁTICA** | **FÍSICA** | **LÍNGUA PORTUGUESA** | **ITINERÁRIOS AMAZÔNICOS** | **PROJETO DE VIDA** |
 | 11:15/12:00 | **MATEMÁTICA** | **ARTES** | **LÍNGUA PORTUGUESA** | **ITINERÁRIOS AMAZÔNICOS** | **FILOSOFIA** |
-
-::active-homeworks[]
 
 ## Matérias Escolares
 | Ciências Humanas          | Ciências da Linguagem             | Ciências Exatas           |

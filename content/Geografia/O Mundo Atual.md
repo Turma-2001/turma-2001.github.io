@@ -5,7 +5,7 @@ title: O Mundo Atual
 banner: https://www.eusemfronteiras.com.br/wp-content/uploads/2023/11/Os-porques-do-mundo-atual-810x456.png
 subject: Geografia
 assessement: 1
-date: 1706497200
+date: 1707102000
 type: homework
 deadline: 1707102000
 ---
