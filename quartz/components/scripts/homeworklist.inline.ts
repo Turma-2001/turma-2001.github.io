@@ -107,8 +107,6 @@ class ActiveHomeworksComponent extends HTMLElement {
 
         baseElement.classList.add('active-homeworks', 'homework-list')
 
-        homeworks = []
-
         if (homeworks.length == 0) {
             let noHomeworkAvailable = document.createElement('p')
 
