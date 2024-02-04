@@ -15,7 +15,7 @@ interface Item {
 let index: FlexSearch.Document<Item> | undefined = undefined
 
 // Can be expanded with things like "term" in the future
-type SearchType = "basic" | "tags"
+type SearchType = "basic" | "tags" | "date"
 
 // Current searchType
 let searchType: SearchType = "basic"
@@ -69,7 +69,7 @@ function highlight(searchTerm: string, text: string, trim?: boolean) {
     .join(" ")
 
   return `${startIndex === 0 ? "" : "..."}${slice}${endIndex === tokenizedText.length - 1 ? "" : "..."
-  }`
+    }`
 }
 
 const p = new DOMParser()
@@ -234,7 +234,7 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
       // if searchType is tag, display context from start of file and trim, otherwise use regular highlight
       content: fileInfo.description == "" || !fileInfo.description ? (searchType === "tags"
         ? trimContent(data[slug].content)
-        : highlight(term, data[slug].content ?? "", true)) : fileInfo.description,
+        : highlight(term, data[slug].content ?? "", true)) : highlight(term, fileInfo.description),
       tags: highlightTags(term, fileInfo.tags),
     }
   }

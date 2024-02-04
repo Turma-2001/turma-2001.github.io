@@ -14,6 +14,8 @@ banner: /static/school.png
 | 10:30/11:15 | **MATEMÁTICA** | **FÍSICA** | **LÍNGUA PORTUGUESA** | **ITINERÁRIOS AMAZÔNICOS** | **PROJETO DE VIDA** |
 | 11:15/12:00 | **MATEMÁTICA** | **ARTES** | **LÍNGUA PORTUGUESA** | **ITINERÁRIOS AMAZÔNICOS** | **FILOSOFIA** |
 
+::active-homeworks[]
+
 ## Matérias Escolares
 | Ciências Humanas          | Ciências da Linguagem             | Ciências Exatas           |
 |---------------------------|-----------------------------------|---------------------------|

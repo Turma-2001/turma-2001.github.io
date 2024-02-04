@@ -2,13 +2,13 @@
 tags:
   - Geografia
 title: O Mundo Atual
+banner: https://www.eusemfronteiras.com.br/wp-content/uploads/2023/11/Os-porques-do-mundo-atual-810x456.png
+subject: Geografia
+assessement: 1
+date: 1706497200
+type: homework
+deadline: 1707102000
 ---
-| Matéria | [[Geografia]] |
-| :--: | :--: |
-| Avaliação | 1° Avaliação |
-| 📆 Dia da Aula | 2024-01-29 |
-| Tipo | Atividade |
-| Prazo | 2024-02-05 |
 # Assunto: O Mundo Atual
 ## Cite Palavras que Caracterizam o Mundo que Vivemos
 1. Violência

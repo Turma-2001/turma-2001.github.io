@@ -14,7 +14,7 @@ function TagList({ fileData, displayClass }: QuartzComponentProps) {
           return (
             <li>
               <a href={linkDest} class="internal tag-link">
-                {display}
+                <p class='text'>{display}</p>
               </a>
             </li>
           )
@@ -49,8 +49,21 @@ TagList.css = `
 }
 
 a.internal.tag-link {
-  border-radius: 8px;
-  background-color: var(--highlight);
+  background: none;
+  padding: 0;
+}
+
+a.internal.tag-link .text {
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  
+  background-clip: text !important;
+  background: linear-gradient(145deg, var(--tertiary), var(--secondary));
+
+  font-family: var(--headerFont);
+  font-weight: 800;
+  font-size: 18px;
+
   padding: 0.2rem 0.4rem;
   margin: 0 0.1rem;
 }

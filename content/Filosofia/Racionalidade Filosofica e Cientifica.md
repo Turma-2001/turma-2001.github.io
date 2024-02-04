@@ -1,14 +1,14 @@
 ---
 title: Racionalidade Filosofica e Cientifica
+banner: https://cdn.universoracionalista.org/wp-content/uploads/2015/08/Cientificismo-e-Ci%C3%AAncia.jpg.webp
 tags:
   - Filosofia
-description: A concepção de "racionalidade" permeia a essência humana, distinguindo-a pela capacidade de pensar, raciocinar e agir conforme a razão, um atributo que a separa dos demais animais. Ao longo da evolução, a instrumentalização humana conferiu à ciência o status de racionalidade, conforme proposto pelo positivismo de Comte. Contudo, neste contexto contemporâneo, é imperativo cautela diante do fascínio por máquinas e validação científica. O termo "racionalidade" desdobra-se em dimensões filosóficas e científicas, onde a primeira abrange todo o conhecimento numa cosmovisão, enquanto a segunda se restringe a métodos analíticos e experimentos. A relação entre Razão Filosófica e Entendimento Científico, conforme Kant, destaca a dependência do segundo em relação ao primeiro. Em meio a esse cenário, surge o desafio filosófico de confrontar a idolatria, especialmente a científica, que por vezes é elevada à posição única de portadora de verdade. Além disso, a teoria da escolha, exemplificada por Walsh, enfatiza a racionalidade baseada na consistência de comportamento, desconsiderando juízos de valor. Esse paradigma se estende à esfera científica, onde a coerência de ações prevalece sobre as questões de fins e valores, ressaltando a importância de buscar a verdade com determinação.
+description: Assunto de Filosofia
+subject: Filosofia
+assessement: 1
+date: 1706842800
+type: subject
 ---
-| Matéria | [[Filosofia]] |
-| :--: | :--: |
-| Avaliação | 1° Avaliação |
-| 📆 Dia da Aula | 2024-02-02 |
-| Tipo | Assunto |
 
 # Racionalidade Filosofica e Ciêntifica
 Racional é o ser que pensa, raciocina, que age segundo a razão. Racional serve para descrever o Homem de Uma forma Geral, e é uma caracteristica que o separa dos restantes animais.
@@ -22,9 +22,6 @@ A teoria da escolha, elaborada por Walsh (Axiomatic Choice Theory, 1971), compor
 Fonte-JAPIASSU,H. Questões Epistemológicas. Rio de Janeiro, Imago, 1981.
 
 ![[Racionalidade Filosofica e Cientifica Atividade#Atividades]]
-
-
-
 
 ---
 

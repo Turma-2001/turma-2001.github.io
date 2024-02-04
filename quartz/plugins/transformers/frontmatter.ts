@@ -67,6 +67,7 @@ export const FrontMatter: QuartzTransformerPlugin<Partial<Options> | undefined> 
 
             const aliases = coerceToArray(coalesceAliases(data, ["aliases", "alias"]))
             if (aliases) data.aliases = aliases
+
             const cssclasses = coerceToArray(coalesceAliases(data, ["cssclasses", "cssclass"]))
             if (cssclasses) data.cssclasses = cssclasses
 
@@ -75,6 +76,21 @@ export const FrontMatter: QuartzTransformerPlugin<Partial<Options> | undefined> 
 
             const description = coalesceAliases(data, ["description", "desc"])
             if (description) data.description = description
+
+            const subject = coalesceAliases(data, ['subject', 'assunto'])
+            if (subject) data.subject = subject
+
+            const assessement = coalesceAliases(data, ['assessement', 'avaliação'])
+            if (assessement) data.assessement = assessement
+
+            const date = coalesceAliases(data, ['date', 'data'])
+            if (date) data.date = date
+
+            const deadline = coalesceAliases(data, ['deadline', 'prazo'])
+            if (date) data.deadline = deadline
+
+            const type = coalesceAliases(data, ['type', 'tipo'])
+            if (type) data.type = type
 
             // fill in frontmatter
             file.data.frontmatter = data as QuartzPluginData["frontmatter"]
@@ -98,6 +114,11 @@ declare module "vfile" {
       draft: boolean
       enableToc: string
       cssclasses: string[]
+      date: number
+      subject: string
+      type: string
+      assessement: number
+      deadline: number
     }>
   }
 }

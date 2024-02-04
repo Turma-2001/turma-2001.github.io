@@ -2,12 +2,11 @@
 tags:
   - Filosofia
 title: Racionalidade Filosofica e Cientifica Atividade
+subject: Filosofia
+assessement: 1
+date: 1706842800
+type: subject
 ---
-| Matéria | [[Filosofia]] |
-| :--: | :--: |
-| Avaliação | 1° Avaliação |
-| 📆 Dia da Aula | 2024-02-03 |
-| Tipo | Atividade |
 # Atividades
 1. O que é um ser racional?
 

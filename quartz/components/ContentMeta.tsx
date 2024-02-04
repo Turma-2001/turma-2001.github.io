@@ -36,8 +36,47 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
         segments.push(`aprox. ${Math.ceil(minutes)} min. de leitura`)
       }
 
+      const { assessement, deadline, type, subject, date } = fileData.frontmatter ?? {}
+
+      const typeToDisplayTextMapping = {
+        subject: 'Assunto',
+        homework: 'Atividade'
+      }
+
+      type TypeDisplayMapping = 'subject' | 'homework'
+      type ContentInfoProps = {
+        icon?: string
+        text?: string
+        value?: string
+      }
+
+      const ContentInfo = ({ icon, text, value }: ContentInfoProps) => (
+        <tr class='content-info-row'>
+          <td class='content-info-text'>
+            <i class={`bx ${icon}`}></i>
+            <p class='text'>{text}</p>
+          </td>
+          <td class='content-info-value'>
+            {value}
+          </td>
+        </tr>
+      )
+
+      let typeName = typeToDisplayTextMapping[type as TypeDisplayMapping]
+
       return <div class="content-meta-base">
         <p class={classNames(displayClass, "content-meta")}>{segments.join(", ")}</p>
+        {(assessement || type || subject || date) && (
+          <table class='content-info'>
+            <tbody>
+              {assessement && <ContentInfo icon='bxs-bookmark-plus' text='Avaliação' value={`${assessement}° avaliação`} />}
+              {type && (<ContentInfo icon='bx-book' text='Tipo de conteúdo' value={typeName} />)}
+              {subject && (<ContentInfo icon='bxs-pencil' text='Assunto' value={subject} />)}
+              {date && (<ContentInfo icon='bxs-calendar' text='Dia da aula' value={formatDate(new Date(date * 1000), cfg.locale)} />)}
+              {deadline && (<ContentInfo icon='bxs-skull' text='Data de entrega' value={formatDate(new Date(deadline * 1000), cfg.locale)} />)}
+            </tbody>
+          </table>
+        )}
       </div>
     } else {
       return null
@@ -52,23 +91,29 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
   
   .content-meta-base {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
 
     padding: 0 8px;
 
-    .back {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .content-info {
+      background: var(--lightgray);
+      border-radius: 8px;
 
-      .bx {
-        font-size: 18px;
+      font-family: var(--headerFont);
+      text-align: right;
+
+      .content-info-text {
+        display: flex;
+        align-items: center;
+
+        p {
+          margin: 0 0 0 8px;
+          font-weight: 700;
+        }
       }
 
-      .text {
-        margin: 0 8px;
-        font-size: 15px;
+      .content-info-value {
+        color: var(--gray);
       }
     }
   }
