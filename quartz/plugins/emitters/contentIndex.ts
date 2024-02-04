@@ -17,6 +17,7 @@ export type ContentDetails = {
   richContent?: string
   date?: Date
   description?: string
+  banner?: string
 }
 
 interface Options {
@@ -80,8 +81,8 @@ function generateRSSFeed(cfg: GlobalConfiguration, idx: ContentIndex, limit?: nu
       <title>${escapeHTML(cfg.pageTitle)}</title>
       <link>https://${base}</link>
       <description>${!!limit ? `Last ${limit} notes` : "Recent notes"} on ${escapeHTML(
-        cfg.pageTitle,
-      )}</description>
+    cfg.pageTitle,
+  )}</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       ${items}
     </channel>
@@ -96,9 +97,12 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
       const cfg = ctx.cfg.configuration
       const emitted: FilePath[] = []
       const linkIndex: ContentIndex = new Map()
+
       for (const [tree, file] of content) {
         const slug = file.data.slug!
         const date = getDate(ctx.cfg.configuration, file.data) ?? new Date()
+        const data = file.data
+
         if (opts?.includeEmptyFiles || (file.data.text && file.data.text !== "")) {
           linkIndex.set(slug, {
             title: file.data.frontmatter?.title!,
@@ -109,7 +113,7 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
               ? escapeHTML(toHtml(tree as Root, { allowDangerousHtml: true }))
               : undefined,
             date: date,
-            description: file.data.description ?? "",
+            description: data.frontmatter?.description ?? "",
           })
         }
       }
@@ -142,8 +146,11 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
           // remove description and from content index as nothing downstream
           // actually uses it. we only keep it in the index as we need it
           // for the RSS feed
-          delete content.description
-          delete content.date
+
+          if (opts?.enableRSS) {
+            delete content.description
+            delete content.date
+          }
           return [slug, content]
         }),
       )
