@@ -3,8 +3,6 @@ title: Encontros Vocálicos
 ---
 Assunto: [[Língua Portuguesa/index|Língua Portuguesa]]
 
-# Encontros Vocálicos
-
 Ocorrem em encontros entre *vogais e vogais* ou *vogais e semivogais*, tanto em sílabas juntas e quanto separadas.
 
 Encontro vocálico é o encontro de duas vogais, ou de uma vogal com uma ou duas semivogais. Existem três tipos de encontros vocálicos:
