@@ -4,8 +4,8 @@ tags:
 title: Elemento em Comum entre 3 Textos
 description: "Atividade: Identifique os elementos em comun entre os 3 textos"
 subject: Língua Portuguesa
-assessement: "1"
-date: "1706820807"
+assessement: 1
+date: 1706820807
 type: homework
 ---
 # Leia os trechos abaixo:

@@ -4,8 +4,8 @@ tags:
 title: Paciência
 description: Assunto da música "Paciência"
 subject: Língua Portuguesa
-assessement: "1"
-date: "1706561607"
+assessement: 1
+date: 1706561607
 type: subject
 ---
  Mesmo quando tudo pede <br>

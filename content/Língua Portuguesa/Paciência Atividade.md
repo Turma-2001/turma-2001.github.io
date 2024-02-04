@@ -4,8 +4,8 @@ tags:
 title: Paciência Atividade
 description: Atividade do assunto "Paciência"
 subject: Língua Portuguesa
-assessement: "1"
-date: "1706561607"
+assessement: 1
+date: 1706561607
 type: homework
 ---
 ### 1) Qual a mensagem que os compositores quiseram transmitir na canção "[[Paciência]]"?
