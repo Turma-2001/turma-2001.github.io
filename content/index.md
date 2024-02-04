@@ -25,7 +25,7 @@ banner: /static/school.png
 | [Sociologia](/Sociologia) | [Artes](/Artes)                   | [Biologia](/Biologia)     |
 
 ## Recursos
-- [[Calendario Escolar]]
+- [Calendario Escolar](https://www.seduc.pa.gov.br/pagina/6749-calendario-escolar)
 - [Biblioteca Online](https://libraryofbabel.info/)
 - [Plataforma de Aprendizagem](https://www.todamateria.com.br/)
 - [Notas e Boletim](https://www.seduc.pa.gov.br/portal/boletim_online/index.php)
