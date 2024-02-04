@@ -31,18 +31,12 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
 
       // Display reading time if enabled
       if (options.showReadingTime) {
-        const { text: timeTaken, words: _words } = readingTime(text)
-        segments.push(timeTaken)
+        const { minutes } = readingTime(text)
+        segments.push(`aprox. ${Math.ceil(minutes)} min. de leitura`)
       }
 
       return <div class='content-meta-base'>
         <p class={classNames(displayClass, "content-meta")}>{segments.join(", ")}</p>
-        {rootDir == '.' || (
-          <a href={rootDir} class='back'>
-            <i class='bx bx-14 bx-arrow-back'></i>
-            <span class='text'>Voltar a página inicial</span>
-          </a>
-        )}
       </div>
     } else {
       return null

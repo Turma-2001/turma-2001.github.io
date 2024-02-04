@@ -1,24 +1,33 @@
 .darkmode {
-  position: relative;
-  border-radius: 4px;
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  white-space: nowrap;
 
-  & svg {
-    width: 18px;
-
-    fill: var(--darkgray);
-    margin: 0 0.5rem;
+  & input {
+    width: 0;
+    height: 0;
+    display: none;
   }
 
-  & .next-theme-name {
-    padding: 0 0.5rem;
+  & label {
+    position: relative;
+    border-radius: 4px;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    white-space: nowrap;
 
-    font-family: var(--headerFont);
-    font-weight: 700;
+    & svg {
+      width: 18px;
+
+      fill: var(--darkgray);
+      margin: 0 0.5rem;
+    }
+
+    & .next-theme-name {
+      padding: 0 0.5rem;
+
+      font-family: var(--headerFont);
+      font-weight: 700;
+    }
   }
 }
 

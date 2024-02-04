@@ -521,5 +521,23 @@ ol.overflow {
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  width: 2px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--darkgray);
+}
+
+::-webkit-scrollbar-corner {
+  background: none;
 }
