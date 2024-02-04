@@ -20,19 +20,29 @@ type: homework
 > Eu quero viver de verdade eu fico com cinema americano."
 
 ## Texto $III$
+
 > [!quote] Drummond, Andrade
 > "Esse incessante morrer
+> 
 > Que nos teus versos encontro
+> 
 > É a tua vida, poeta,
+> 
 > E por ele te comunicas
+> 
 > Bom o mundo em que te esvais"
 
 ## O elemento comum entre os fragmentos dos poemas é? Justifique.
 (a) a crítica social
+
 (b) a referência à poesia
+
 (c) a lembrança da infância
+
 (d) o culto ao amor
+
 (e) o diálogo com outras artes
+
 
 
 
