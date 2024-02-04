@@ -31,8 +31,8 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
 
       // Display reading time if enabled
       if (options.showReadingTime) {
-        const { text: timeTaken, words: _words } = readingTime(text)
-        segments.push(timeTaken)
+        const { minutes } = readingTime(text)
+        segments.push(`aproximadamente ${Math.ceil(minutes)} ${Math.ceil(minutes) == 1 ? 'minuto' : 'minutos'} de leitura`)
       }
 
       return <div class='content-meta-base'>
