@@ -7,14 +7,24 @@ active-homeworks {
     }
 
     .homework-list {
-        padding: 8px;
-        margin: 0;
-        margin-top: 12px;
+        padding: 0 8px 8px 8px;
+        margin: 12px 0 0 0;
+
         border-radius: 8px;
         background: var(--lightgray);
-        max-height: 200px;
+        max-height: 300px;
+        overflow: scroll;
 
-        .title {
+        &>.title {
+            box-sizing: border-box;
+
+            position: sticky;
+            top: 0;
+            padding: 8px 8px;
+
+            width: 100%;
+            background: var(--lightgray);
+
             display: flex;
             align-items: center;
 
