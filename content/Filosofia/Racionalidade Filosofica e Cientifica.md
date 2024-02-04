@@ -2,6 +2,7 @@
 title: Racionalidade Filosofica e Cientifica
 tags:
   - Filosofia
+description: A concepção de "racionalidade" permeia a essência humana, distinguindo-a pela capacidade de pensar, raciocinar e agir conforme a razão, um atributo que a separa dos demais animais. Ao longo da evolução, a instrumentalização humana conferiu à ciência o status de racionalidade, conforme proposto pelo positivismo de Comte. Contudo, neste contexto contemporâneo, é imperativo cautela diante do fascínio por máquinas e validação científica. O termo "racionalidade" desdobra-se em dimensões filosóficas e científicas, onde a primeira abrange todo o conhecimento numa cosmovisão, enquanto a segunda se restringe a métodos analíticos e experimentos. A relação entre Razão Filosófica e Entendimento Científico, conforme Kant, destaca a dependência do segundo em relação ao primeiro. Em meio a esse cenário, surge o desafio filosófico de confrontar a idolatria, especialmente a científica, que por vezes é elevada à posição única de portadora de verdade. Além disso, a teoria da escolha, exemplificada por Walsh, enfatiza a racionalidade baseada na consistência de comportamento, desconsiderando juízos de valor. Esse paradigma se estende à esfera científica, onde a coerência de ações prevalece sobre as questões de fins e valores, ressaltando a importância de buscar a verdade com determinação.
 ---
 | Matéria | [[Filosofia]] |
 | :--: | :--: |
