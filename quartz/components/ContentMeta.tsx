@@ -37,12 +37,6 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
 
       return <div class='content-meta-base'>
         <p class={classNames(displayClass, "content-meta")}>{segments.join(", ")}</p>
-        {rootDir == '.' || (
-          <a href={rootDir} class='back'>
-            <i class='bx bx-14 bx-arrow-back'></i>
-            <span class='text'>Voltar a página inicial</span>
-          </a>
-        )}
       </div>
     } else {
       return null
