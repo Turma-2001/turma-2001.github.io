@@ -1,5 +1,7 @@
 ---
 title: Racionalidade Filosofica e Racionalidade Cientifica
+tags:
+  - Filosofia
 ---
 | Matéria | [[Filosofia]] |
 | :--: | :--: |

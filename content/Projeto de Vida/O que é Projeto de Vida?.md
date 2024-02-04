@@ -1,5 +1,7 @@
 ---
 title: O que é Projeto de Vida?
+tags:
+  - Projeto-de-Vida
 ---
 | Matéria | [[Projeto de Vida]] |
 | :--: | :--: |

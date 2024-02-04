@@ -1,5 +1,7 @@
 ---
 title: Encontros Vocálicos
+tags:
+  - Português
 ---
 Assunto: [[Língua Portuguesa/index|Língua Portuguesa]]
 

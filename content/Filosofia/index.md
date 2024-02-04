@@ -1,6 +1,8 @@
 ---
 title: Filosofia
 banner: https://images.unsplash.com/photo-1620662736427-b8a198f52a4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80
+tags:
+  - Filosofia
 ---
 **Filosofia: Explorando os Mistérios do Pensamento Humano!** Profª: Cleide Souza
 
