@@ -101,7 +101,7 @@ export function renderPage(
                 type: "element",
                 tagName: "a",
                 properties: { href: inner.properties?.href, class: ["internal"] },
-                children: [{ type: "text", value: `Link to original` }],
+                children: [{ type: "text", value: `Clique para abrir separadamente` }],
               },
             ]
           }
@@ -136,7 +136,7 @@ export function renderPage(
               type: "element",
               tagName: "a",
               properties: { href: inner.properties?.href, class: ["internal"] },
-              children: [{ type: "text", value: `Link to original` }],
+              children: [{ type: "text", value: `Clique para abrir separadamente` }],
             },
           ]
         } else if (page.htmlAst) {
@@ -157,7 +157,7 @@ export function renderPage(
               type: "element",
               tagName: "a",
               properties: { href: inner.properties?.href, class: ["internal"] },
-              children: [{ type: "text", value: `Link to original` }],
+              children: [{ type: "text", value: `Clique para abrir separadamente` }],
             },
           ]
         }
