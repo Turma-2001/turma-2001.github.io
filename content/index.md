@@ -34,3 +34,4 @@ banner: /static/school.png
 - [Google Scholar](https://scholar.google.com/)
 
 ## Datas Importantes
+- 05/02/2024 Entrega: [[O Mundo Atual]]
