@@ -8,23 +8,23 @@ assessement: "1"
 date: "1706561607"
 type: subject
 ---
- Mesmo quando tudo pede
-Um pouco mais de calma
-Até quando mais de calma
-Um pouco mais de alma
-A vida não para
+ Mesmo quando tudo pede <br>
+Um pouco mais de calma <br>
+Até quando mais de calma <br>
+Um pouco mais de alma <br>
+A vida não para <br>
 
-Enquanto o tempo
-Acelera e pede pressa
-Eu me recuso, faço hora,
-Vou na valsa
-A vida é tão rara
+Enquanto o tempo <br>
+Acelera e pede pressa <br>
+Eu me recuso, faço hora, <br>
+Vou na valsa <br>
+A vida é tão rara <br>
 
-Enquanto todo mundo
-Espera a curva do mal
-E a loucura finge
-Que isso tudo é normal
-Eu finjo ter paciência\[...\]
+Enquanto todo mundo <br>
+Espera a curva do mal <br>
+E a loucura finge <br>
+Que isso tudo é norma <br>l
+Eu finjo ter paciência\[...\] <br> 
 
 \- Lenine e Falcão 
 
