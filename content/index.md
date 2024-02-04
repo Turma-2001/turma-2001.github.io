@@ -2,6 +2,10 @@
 title: Página inicial
 banner: /static/school.png
 ---
+## Datas Importantes
+- 06/02/2024 Entrega: [[O Mundo Atual]] Atividade ([[Geografia]])
+- 05/02/2024 Entrega: [[Converte Temperatura Atividade]] ([[Física]])
+- 06/02/2024 Entrega: Desenho de arte dos quadradinhos ([[Artes]])
 
 ## Horário
 | Horários | Segunda | Terça | Quarta | Quinta | Sexta |
@@ -34,8 +38,3 @@ banner: /static/school.png
 - [Khan Academy](https://pt.khanacademy.org/profile/me/courses)
 - [Wikipedia](https://www.wikipedia.org/)
 - [Google Scholar](https://scholar.google.com/)
-
-## Datas Importantes
-- 05/02/2024 Entrega: [[O Mundo Atual]] Atividade ([[Geografia]])
-- 06/02/2024 Entrega: [[Converte Temperatura Atividade]] ([[Física]])
-- 06/02/2024 Entrega: Desenho de arte dos quadradinhos ([[Artes]])
