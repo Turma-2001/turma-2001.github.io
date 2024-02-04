@@ -1,5 +1,5 @@
 ---
-title: Racionalidade Filosofica e Racionalidade Cientifica
+title: Racionalidade Filosofica e Cientifica
 tags:
   - Filosofia
 ---

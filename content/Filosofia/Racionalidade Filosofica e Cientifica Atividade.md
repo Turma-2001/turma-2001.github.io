@@ -1,5 +1,5 @@
 ---
-title: Racionalidade Filosofica e Racionalidade Cientifica Atividade
+title: Racionalidade Filosofica e Cientifica Atividade
 tags:
   - Filosofia
 ---
