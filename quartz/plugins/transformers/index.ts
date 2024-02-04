@@ -10,3 +10,4 @@ export { SyntaxHighlighting } from "./syntax"
 export { TableOfContents } from "./toc"
 export { HardLineBreaks } from "./linebreaks"
 export { Homeworks } from './homeworks'
+export { SVGScaler } from './svg_scaler'

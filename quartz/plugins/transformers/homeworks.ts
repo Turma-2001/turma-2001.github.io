@@ -1,15 +1,31 @@
 import { QuartzTransformerPlugin } from "../types"
 import { VFile } from "vfile"
 import remarkDirective from "remark-directive"
-import { VisitorResult, visit } from "unist-util-visit"
-import { Root } from "mdast"
+import { CONTINUE, Test, VisitorResult, visit } from "unist-util-visit"
+import { Node, Root } from "mdast"
+import { Html } from "mdast-util-to-hast/lib/handlers/html"
 
 type HomeworksOptions = {}
 
 const defaultOptions: HomeworksOptions = {}
 
 const HomeworkTransformerPlugin = () => ((tree: Root, file: VFile) => {
-    visit(tree, (node) => {
+    visit<Root, Test>(tree, 'leafDirective', (node: Node, index: number | undefined, parent) => {
+        if (!parent)
+            return CONTINUE
+
+        if (!index)
+            return CONTINUE
+
+        let leafNode = node as Node & { name: string }
+
+        if (leafNode.name != 'active-homeworks')
+            return CONTINUE
+
+        parent.children[index] = {
+            type: 'html',
+            value: '<active-homeworks></active-homeworks>'
+        } as Html
     })
 })
 
