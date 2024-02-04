@@ -8,6 +8,7 @@ import { pluralize } from "../../util/lang"
 import { htmlToJsx } from "../../util/jsx"
 
 const numPages = 10
+
 function TagContent(props: QuartzComponentProps) {
   const { tree, fileData, allFiles } = props
   const slug = fileData.slug

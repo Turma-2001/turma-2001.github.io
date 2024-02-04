@@ -56,10 +56,9 @@ button#explorer {
     list-style: none;
     margin: 0.08rem 0;
     padding: 0;
-    transition:
-      max-height 0.35s ease,
-      transform 0.35s ease,
-      opacity 0.2s ease;
+    transition: max-height 0.35s ease,
+    transform 0.35s ease,
+    opacity 0.2s ease;
 
     & li > a {
       color: var(--dark);

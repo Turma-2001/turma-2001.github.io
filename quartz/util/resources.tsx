@@ -7,14 +7,14 @@ export type JSResource = {
   spaPreserve?: boolean
 } & (
   | {
-      src: string
-      contentType: "external"
-    }
+  src: string
+  contentType: "external"
+}
   | {
-      script: string
-      contentType: "inline"
-    }
-)
+  script: string
+  contentType: "inline"
+}
+  )
 
 export function JSResourceToScriptElement(resource: JSResource, preserve?: boolean): JSX.Element {
   const scriptType = resource.moduleType ?? "application/javascript"

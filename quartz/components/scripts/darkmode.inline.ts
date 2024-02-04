@@ -16,7 +16,7 @@ document.addEventListener("nav", () => {
 
   const themeChangeLabelLookup = {
     dark: "Tema claro",
-    light: "Tema escuro"
+    light: "Tema escuro",
   }
 
   const switchTheme = (e: Event) => {
@@ -52,7 +52,7 @@ document.addEventListener("nav", () => {
     toggleSwitch.checked = true
   }
 
-  themeText.innerText = themeChangeLabelLookup[currentTheme as 'light' | 'dark']
+  themeText.innerText = themeChangeLabelLookup[currentTheme as "light" | "dark"]
 
   const colorSchemeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)")
 

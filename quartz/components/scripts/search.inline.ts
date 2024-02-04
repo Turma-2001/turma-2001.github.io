@@ -23,6 +23,7 @@ let searchType: SearchType = "basic"
 const contextWindowWords = 30
 const numSearchResults = 8
 const numTagResults = 5
+
 function highlight(searchTerm: string, text: string, trim?: boolean) {
   // try to highlight longest tokens first
   const tokenizedTerms = searchTerm
@@ -68,7 +69,7 @@ function highlight(searchTerm: string, text: string, trim?: boolean) {
     .join(" ")
 
   return `${startIndex === 0 ? "" : "..."}${slice}${endIndex === tokenizedText.length - 1 ? "" : "..."
-    }`
+  }`
 }
 
 const p = new DOMParser()
@@ -231,7 +232,7 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
       slug,
       title: searchType === "tags" ? data[slug].title : highlight(term, data[slug].title ?? ""),
       // if searchType is tag, display context from start of file and trim, otherwise use regular highlight
-      content: fileInfo.description == '' || !fileInfo.description ? (searchType === "tags"
+      content: fileInfo.description == "" || !fileInfo.description ? (searchType === "tags"
         ? trimContent(data[slug].content)
         : highlight(term, data[slug].content ?? "", true)) : fileInfo.description,
       tags: highlightTags(term, fileInfo.tags),
@@ -271,7 +272,7 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
 
   const resultToHTML = ({ slug, title, content, description, tags }: Item) => {
     const htmlTags = tags.length > 0 ? `<ul>${tags.join("")}</ul>` : ``
-    const resultContent = enablePreview && window.innerWidth > 600 ? "" : `<p>${description == '' || !description ? content : description}</p>`
+    const resultContent = enablePreview && window.innerWidth > 600 ? "" : `<p>${description == "" || !description ? content : description}</p>`
 
     const itemTile = document.createElement("a")
 

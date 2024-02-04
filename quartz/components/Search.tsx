@@ -35,7 +35,7 @@ export default ((userOpts?: Partial<PesquisarOptions>) => {
           </svg>
 
           <div></div>
-          <p class='desktop-only'>Pesquisar</p>
+          <p class="desktop-only">Pesquisar</p>
         </div>
         <div id="search-container">
           <div id="search-space">

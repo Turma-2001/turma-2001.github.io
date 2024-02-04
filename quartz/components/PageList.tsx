@@ -50,7 +50,7 @@ export function PageList({ cfg, fileData, allFiles, limit }: Props) {
                 </a>
               </h3>
 
-              <div class='information'>
+              <div class="information">
                 <ul class="tags">
                   {tags.map((tag) => (
                     <li>

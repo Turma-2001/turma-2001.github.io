@@ -51,6 +51,7 @@ export function pageResources(
 }
 
 let pageIndex: Map<FullSlug, QuartzPluginData> | undefined = undefined
+
 function getOrComputeFileIndex(allFiles: QuartzPluginData[]): Map<FullSlug, QuartzPluginData> {
   if (!pageIndex) {
     pageIndex = new Map()
@@ -195,34 +196,34 @@ export function renderPage(
 
   const doc = (
     <html>
-      <Head {...componentData} />
-      <body data-slug={slug}>
-        <div id="quartz-root" class="page">
-          <Body {...componentData}>
-            {LeftComponent}
-            <div class="center">
-              <div class="page-header">
-                <Header {...componentData}>
-                  {header.map((HeaderComponent) => (
-                    <HeaderComponent {...componentData} />
-                  ))}
-                </Header>
-                <div class="popover-hint">
-                  {beforeBody.map((BodyComponent) => (
-                    <BodyComponent {...componentData} />
-                  ))}
-                </div>
-              </div>
-              <Content {...componentData} />
+    <Head {...componentData} />
+    <body data-slug={slug}>
+    <div id="quartz-root" class="page">
+      <Body {...componentData}>
+        {LeftComponent}
+        <div class="center">
+          <div class="page-header">
+            <Header {...componentData}>
+              {header.map((HeaderComponent) => (
+                <HeaderComponent {...componentData} />
+              ))}
+            </Header>
+            <div class="popover-hint">
+              {beforeBody.map((BodyComponent) => (
+                <BodyComponent {...componentData} />
+              ))}
             </div>
-            {RightComponent}
-          </Body>
-          <Footer {...componentData} />
+          </div>
+          <Content {...componentData} />
         </div>
-      </body>
-      {pageResources.js
-        .filter((resource) => resource.loadTime === "afterDOMReady")
-        .map((res) => JSResourceToScriptElement(res))}
+        {RightComponent}
+      </Body>
+      <Footer {...componentData} />
+    </div>
+    </body>
+    {pageResources.js
+      .filter((resource) => resource.loadTime === "afterDOMReady")
+      .map((res) => JSResourceToScriptElement(res))}
     </html>
   )
 

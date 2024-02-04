@@ -18,9 +18,10 @@ const defaultOptions: ContentMetaOptions = {
 export default ((opts?: Partial<ContentMetaOptions>) => {
   // Merge options with defaults
   const options: ContentMetaOptions = { ...defaultOptions, ...opts }
+
   function ContentMetadata({ cfg, fileData, displayClass }: QuartzComponentProps) {
     const text = fileData.text
-    const rootDir = pathToRoot((fileData.slug ?? '/') as FullSlug)
+    const rootDir = pathToRoot((fileData.slug ?? "/") as FullSlug)
 
     if (text) {
       const segments: string[] = []
@@ -35,7 +36,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
         segments.push(`aprox. ${Math.ceil(minutes)} min. de leitura`)
       }
 
-      return <div class='content-meta-base'>
+      return <div class="content-meta-base">
         <p class={classNames(displayClass, "content-meta")}>{segments.join(", ")}</p>
       </div>
     } else {

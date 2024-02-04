@@ -52,6 +52,7 @@ function TableOfContents({ fileData, displayClass }: QuartzComponentProps) {
     </div>
   )
 }
+
 TableOfContents.css = modernStyle
 TableOfContents.afterDOMLoaded = script
 
@@ -77,6 +78,7 @@ function LegacyTableOfContents({ fileData }: QuartzComponentProps) {
     </details>
   )
 }
+
 LegacyTableOfContents.css = legacyStyle
 
 export default ((opts?: Partial<Options>) => {

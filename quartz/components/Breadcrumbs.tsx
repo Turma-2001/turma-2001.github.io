@@ -59,7 +59,7 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
     // Format entry for root element
     const firstEntry = formatCrumb(options.rootName, fileData.slug!, "/" as SimpleSlug)
 
-    firstEntry.icon = 'bx bxs-home';
+    firstEntry.icon = "bx bxs-home"
 
     const crumbs: CrumbData[] = [firstEntry]
 
@@ -118,12 +118,13 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
           <div class="breadcrumb-element">
             {crumb.icon && (<i class={`crumb-icon ${crumb.icon}`}></i>)}
             <a href={crumb.path}>{crumb.displayName}</a>
-            {index !== crumbs.length - 1 && <i class='separator bx bxs-chevron-right'></i>}
+            {index !== crumbs.length - 1 && <i class="separator bx bxs-chevron-right"></i>}
           </div>
         ))}
       </nav>
     )
   }
+
   Breadcrumbs.css = breadcrumbsStyle
   return Breadcrumbs
 }) satisfies QuartzComponentConstructor
