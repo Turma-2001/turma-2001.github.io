@@ -9,7 +9,7 @@ tags:
 | 📆 Dia da Aula | 2024-02-02 |
 | Tipo | Assunto |
 
-# Racionalidade Filosofica e Racionalidade Ciêntifica
+# Racionalidade Filosofica e Ciêntifica
 Racional é o ser que pensa, raciocina, que age segundo a razão. Racional serve para descrever o Homem de Uma forma Geral, e é uma caracteristica que o separa dos restantes animais.
 
 A capacidade de instrumentalização do homem foi, ao longo do tempo, conferindo à Ciência o atributo de Racionalidade. O positivismo de Comte, defende a ideia de que o conhecimento cientifico seria a única forma de Conhecimento verdadeiro e mostra a influência que a epistemologia (teoria do conhecimento) exerceu sobre a Filosofia. Neste status quo (estado atual das coisas), temos de ponderar, a fim de não sermos tragados pelo Encantamento das máquinas e da comprovação cientifica. O conceito de "racionalidade" tem dupla significação: filosófica e cientifica. A racionalidade filosófica abarca a Totalidade do saber, em que o pensamento insere-se numa cosmovisão do ser; a racionalidade cientifica possui Visão restrita, ou seja, limitada aos métodos de análises conceituais e de experimentos. Kant chama a primeira de Razão e a segunda de Entendimento. O importante a ressaltar é que o Entendimento Cientifico depende da Razão Filosófica, e não o contrário.
@@ -20,7 +20,7 @@ A teoria da escolha, elaborada por Walsh (Axiomatic Choice Theory, 1971), compor
 
 Fonte-JAPIASSU,H. Questões Epistemológicas. Rio de Janeiro, Imago, 1981.
 
-![[Racionalidade Filosofica e Racionalidade Cientifica Atividade#Atividades]]
+![[Racionalidade Filosofica e Cientifica Atividade#Atividades]]
 
 
 
