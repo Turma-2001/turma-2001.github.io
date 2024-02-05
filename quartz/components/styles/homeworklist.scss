@@ -20,7 +20,7 @@ active-homeworks {
 
             position: sticky;
             top: 0;
-            padding: 8px 8px;
+            padding: 8px 2px;
 
             width: 100%;
             background: var(--lightgray);
@@ -28,17 +28,7 @@ active-homeworks {
             display: flex;
             align-items: center;
 
-            i {
-                font-size: 1.75rem;
-                margin-right: 8px;
-            }
-
-            h1 {
-                margin: 0;
-            }
-
-            i,
-            h1 {
+            i, h1 {
                 -webkit-text-fill-color: transparent;
 
                 background-clip: text !important;
@@ -46,6 +36,17 @@ active-homeworks {
 
                 font-family: var(--headerFont);
                 font-weight: 800;
+            }
+
+            i {
+                font-size: 1.75rem;
+                margin-right: 8px;
+
+                animation: hourglass-anim 2s infinite ease-in-out;
+            }
+
+            h1 {
+                margin: 0;
             }
         }
 
@@ -101,4 +102,26 @@ active-homeworks {
         }
     }
 
+}
+
+@keyframes hourglass-anim {
+    0% {
+        transform: rotateZ(0);
+    }
+
+    25% {
+        transform: rotateZ(0);
+    }
+
+    50% {
+        transform: rotateZ(180deg);
+    }
+
+    75% {
+        transform: rotateZ(360deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
 }

@@ -15,9 +15,16 @@ type HomeworkEntry = {
     url: string
     deadlineEnd: string
     subject: string
+    daysUntilDeadline: number
 }
 
 const fetchHomeworks = async () => {
+    const daysToStringMapping = {
+        0: 'hoje',
+        1: 'amanhã',
+        2: 'depois de amanhã'
+    }
+
     const index = await fetchData
     const homeworks: HomeworkEntry[] = []
 
@@ -30,19 +37,22 @@ const fetchHomeworks = async () => {
 
         let daysUntilDeadline = deadlineDate.getDay() - currentDate.getDay()
 
-        if (daysUntilDeadline < 0) {
+        if (daysUntilDeadline < 0 || (daysUntilDeadline == 0 && currentDate.getHours() > 12)) {
             continue
         }
 
-        let text = daysUntilDeadline == 0 ? 'Hoje' : `Em ${daysUntilDeadline} ${daysUntilDeadline == 1 ? 'dia' : 'dias'}`
+        let text = `Entrega ${daysToStringMapping[daysUntilDeadline as 0 | 1 | 2] ?? `em ${daysUntilDeadline} dias`}`
 
         homeworks.push({
             name: fileData.title,
             subject: fileData.subject ?? 'Sem assunto associado',
             deadlineEnd: text,
-            url: slug
+            url: slug,
+            daysUntilDeadline
         })
     }
+
+    homeworks.sort((a, b) => a.daysUntilDeadline - b.daysUntilDeadline)
 
     return homeworks
 }
