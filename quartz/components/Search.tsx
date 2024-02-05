@@ -35,7 +35,7 @@ export default ((userOpts?: Partial<PesquisarOptions>) => {
           </svg>
 
           <div></div>
-          <p class='desktop-only'>Pesquisar</p>
+          <p class="desktop-only">Pesquisar</p>
         </div>
         <div id="search-container">
           <div id="search-space">
@@ -44,8 +44,8 @@ export default ((userOpts?: Partial<PesquisarOptions>) => {
               id="search-bar"
               name="search"
               type="text"
-              aria-label="Pesquisar algo"
-              placeholder="Pesquisar algo"
+              aria-label="Pesquisar (Use '#' para buscar por tags)"
+              placeholder="Pesquisar (Use '#' para buscar por tags)"
             />
             <div id="search-layout" data-preview={opts.enablePreview}></div>
           </div>

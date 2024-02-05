@@ -1,7 +1,7 @@
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import style from "./styles/footer.scss"
 import { version } from "../../package.json"
-import { JSX } from "preact/jsx-runtime";
+import { JSX } from "preact/jsx-runtime"
 
 interface Link {
   url: string;
@@ -19,10 +19,10 @@ export default ((opts?: Options) => {
     return (
       <footer class={`${displayClass ?? ""}`}>
         <hr />
-        <ul className='links'>
+        <ul className="links">
           {Object.entries(links).map(([text, link]) => (
-            <li className='link'>
-              <div class='icon'>{link?.icon?.()}</div>
+            <li className="link">
+              <div class="icon">{link?.icon?.()}</div>
               <a href={link.url}>{text}</a>
             </li>
           ))}

@@ -15,6 +15,7 @@ type LinkData = {
 }
 
 const localStorageKey = "graph-visited"
+
 function getVisited(): Set<SimpleSlug> {
   return new Set(JSON.parse(localStorage.getItem(localStorageKey) ?? "[]"))
 }
@@ -140,7 +141,7 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
     .data(graphData.links)
     .join("line")
     .attr("class", "link")
-    .attr("stroke", "var(--lightgray)")
+    .attr("stroke", "var(--darkgray)")
     .attr("stroke-width", 1)
 
   // svg groups
@@ -176,7 +177,8 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
       d.fy = null
     }
 
-    const noop = () => {}
+    const noop = () => {
+    }
     return d3
       .drag<Element, NodeData>()
       .on("start", enableDrag ? dragstarted : noop)
@@ -236,7 +238,7 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
         .selectAll(".link")
         .filter((d: any) => d.source.id === currentId || d.target.id === currentId)
 
-      linkNodes.transition().duration(200).attr("stroke", "var(--lightgray)")
+      linkNodes.transition().duration(200).attr("stroke", "var(--darkgray)")
 
       const parent = this.parentNode as HTMLElement
       d3.select<HTMLElement, NodeData>(parent)

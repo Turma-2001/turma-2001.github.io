@@ -7,11 +7,11 @@ function ArticleTitle({ fileData, displayClass }: QuartzComponentProps) {
 
   return <>
     {banner ? (
-      <div class='banner'>
-        <img src={banner} class='banner-img'></img>
+      <div class="banner">
+        <img src={banner} class="banner-img"></img>
         {title ? (
-          <div class='banner-title'>
-            <h1 class={classNames(displayClass, 'article-title')}>{title}</h1>
+          <div class="banner-title">
+            <h1 class={classNames(displayClass, "article-title")}>{title}</h1>
           </div>
         ) : null}
       </div>
@@ -19,6 +19,7 @@ function ArticleTitle({ fileData, displayClass }: QuartzComponentProps) {
     }
   </>
 }
+
 ArticleTitle.css = `
 .banner {
   margin-top: 8px;
@@ -44,7 +45,7 @@ ArticleTitle.css = `
     box-sizing: border-box;
 
     position: absolute;
-    background: linear-gradient(0, rgba(0, 0, 0, 0.2), transparent);
+    background: linear-gradient(0, rgba(0, 0, 0, 0.3), transparent);
 
     top: 100%;
     left: 0;
@@ -60,7 +61,7 @@ ArticleTitle.css = `
 }
 
 .article-title {
-  margin: 2rem 0 0;
+  margin: 1rem 0 0;
 }
 `
 

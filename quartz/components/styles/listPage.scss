@@ -14,7 +14,7 @@ li.section-li {
   padding: 10px 12px 0 12px;
   border-radius: 8px;
 
-  &>.section {
+  & > .section {
     display: flex;
     flex-direction: column;
 
@@ -23,7 +23,7 @@ li.section-li {
       align-items: center;
       width: 100%;
 
-      &>.metadata-date {
+      & > .metadata-date {
         margin: 0;
         opacity: 0.6;
       }
@@ -39,7 +39,7 @@ li.section-li {
 .popover .section {
   grid-template-columns: 6em 1fr !important;
 
-  &>.tags {
+  & > .tags {
     display: none;
   }
 }

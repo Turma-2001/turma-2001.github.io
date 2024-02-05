@@ -1,9 +1,9 @@
 ---
 title: Encontros Vocálicos
+tags:
+  - Português
 ---
 Assunto: [[Língua Portuguesa/index|Língua Portuguesa]]
-
-# Encontros Vocálicos
 
 Ocorrem em encontros entre *vogais e vogais* ou *vogais e semivogais*, tanto em sílabas juntas e quanto separadas.
 

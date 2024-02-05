@@ -9,12 +9,13 @@ interface Item {
   title: string
   content: string
   tags: string[]
+  description?: string
 }
 
 let index: FlexSearch.Document<Item> | undefined = undefined
 
 // Can be expanded with things like "term" in the future
-type SearchType = "basic" | "tags"
+type SearchType = "basic" | "tags" | "date"
 
 // Current searchType
 let searchType: SearchType = "basic"
@@ -22,6 +23,7 @@ let searchType: SearchType = "basic"
 const contextWindowWords = 30
 const numSearchResults = 8
 const numTagResults = 5
+
 function highlight(searchTerm: string, text: string, trim?: boolean) {
   // try to highlight longest tokens first
   const tokenizedTerms = searchTerm
@@ -223,16 +225,17 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
 
   const formatForDisplay = (term: string, id: number) => {
     const slug = idDataMap[id]
+    const fileInfo = data[slug]
+
     return {
       id,
       slug,
       title: searchType === "tags" ? data[slug].title : highlight(term, data[slug].title ?? ""),
       // if searchType is tag, display context from start of file and trim, otherwise use regular highlight
-      content:
-        searchType === "tags"
-          ? trimContent(data[slug].content)
-          : highlight(term, data[slug].content ?? "", true),
-      tags: highlightTags(term, data[slug].tags),
+      content: fileInfo.description == "" || !fileInfo.description ? (searchType === "tags"
+        ? trimContent(data[slug].content)
+        : highlight(term, data[slug].content ?? "", true)) : highlight(term, fileInfo.description),
+      tags: highlightTags(term, fileInfo.tags),
     }
   }
 
@@ -267,12 +270,14 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
     return new URL(resolveRelative(currentSlug, slug), location.toString())
   }
 
-  const resultToHTML = ({ slug, title, content, tags }: Item) => {
+  const resultToHTML = ({ slug, title, content, description, tags }: Item) => {
     const htmlTags = tags.length > 0 ? `<ul>${tags.join("")}</ul>` : ``
-    const resultContent = enablePreview && window.innerWidth > 600 ? "" : `<p>${content}</p>`
+    const resultContent = enablePreview && window.innerWidth > 600 ? "" : `<p>${description == "" || !description ? content : description}</p>`
 
     const itemTile = document.createElement("a")
+
     itemTile.classList.add("result-card")
+
     Object.assign(itemTile, {
       id: slug,
       href: resolveUrl(slug).toString(),

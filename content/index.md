@@ -2,6 +2,8 @@
 title: Página inicial
 banner: /static/school.png
 ---
+::active-homeworks[]
+
 
 ## Horário
 | Horários | Segunda | Terça | Quarta | Quinta | Sexta |
@@ -23,8 +25,8 @@ banner: /static/school.png
 | [Sociologia](/Sociologia) | [Artes](/Artes)                   | [Biologia](/Biologia)     |
 
 ## Recursos
-- [[|Calendario Escolar]]
-- [Biblioteca Online](https://exemplo.com/biblioteca-online)
+- [Calendario Escolar](https://www.seduc.pa.gov.br/pagina/6749-calendario-escolar)
+- [Biblioteca Online](https://libraryofbabel.info/)
 - [Plataforma de Aprendizagem](https://www.todamateria.com.br/)
 - [Notas e Boletim](https://www.seduc.pa.gov.br/portal/boletim_online/index.php)
 
@@ -32,5 +34,3 @@ banner: /static/school.png
 - [Khan Academy](https://pt.khanacademy.org/profile/me/courses)
 - [Wikipedia](https://www.wikipedia.org/)
 - [Google Scholar](https://scholar.google.com/)
-
-## Datas Importantes

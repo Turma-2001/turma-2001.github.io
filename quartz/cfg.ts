@@ -6,18 +6,18 @@ import { Theme } from "./util/theme"
 export type Analytics =
   | null
   | {
-      provider: "plausible"
-      host?: string
-    }
+    provider: "plausible"
+    host?: string
+  }
   | {
-      provider: "google"
-      tagId: string
-    }
+    provider: "google"
+    tagId: string
+  }
   | {
-      provider: "umami"
-      websiteId: string
-      host?: string
-    }
+    provider: "umami"
+    websiteId: string
+    host?: string
+  }
 
 export interface GlobalConfiguration {
   pageTitle: string
@@ -60,4 +60,4 @@ export interface FullPageLayout {
 }
 
 export type PageLayout = Pick<FullPageLayout, "beforeBody" | "left" | "right">
-export type SharedLayout = Pick<FullPageLayout, "head" | "header" | "footer">
+export type SharedLayout = Pick<FullPageLayout, "footer" | "head" | "header" | "footer">

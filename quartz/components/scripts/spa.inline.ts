@@ -13,7 +13,8 @@ const isLocalUrl = (href: string) => {
     if (window.location.origin === url.origin) {
       return true
     }
-  } catch (e) {}
+  } catch (e) {
+  }
   return false
 }
 
@@ -40,6 +41,7 @@ function notifyNav(url: FullSlug) {
 }
 
 let p: DOMParser
+
 async function navigate(url: URL, isBack: boolean = false) {
   p = p || new DOMParser()
   const contents = await fetch(`${url}`)
@@ -170,6 +172,7 @@ if (!customElements.get("route-announcer")) {
       constructor() {
         super()
       }
+
       connectedCallback() {
         for (const [key, value] of Object.entries(attrs)) {
           this.setAttribute(key, value)

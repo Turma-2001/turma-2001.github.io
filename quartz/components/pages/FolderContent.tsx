@@ -51,7 +51,8 @@ export default ((opts?: Partial<FolderContentOptions>) => {
         </article>
         <div class="page-listing">
           {options.showFolderCount && (
-            <p>{allPagesInFolder.length == 1 ? "Existe apenas" : "Existem"} {allPagesInFolder.length} {allPagesInFolder.length == 1 ? "item" : "itens"} nesta pasta</p>
+            <p>{allPagesInFolder.length == 1 ? "Existe apenas" : "Existem"} {allPagesInFolder.length} {allPagesInFolder.length == 1 ? "item" : "itens"} nesta
+              pasta</p>
           )}
           <div>
             <PageList {...listProps} />

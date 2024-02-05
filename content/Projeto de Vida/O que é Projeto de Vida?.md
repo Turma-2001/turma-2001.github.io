@@ -1,11 +1,12 @@
 ---
 title: O que é Projeto de Vida?
+tags:
+  - Projeto-de-Vida
+subject: Projeto de Vida
+date: 1706912210
+type: subject
+assessement: 1
 ---
-| Matéria | [[Projeto de Vida]] |
-| :--: | :--: |
-| Avaliação | 1° Avaliação |
-| 📆 Dia da Aula | 2024-02-02 |
-| Tipo | Assunto |
 # O que é Projeto de Vida?
 **PV:** É uma maneira de dar sentido a vida do sujeito. Está relacionada as suas escolhas, valores, principios, metas, ações.
 

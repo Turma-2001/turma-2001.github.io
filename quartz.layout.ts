@@ -19,10 +19,11 @@ export const sharedPageComponents: SharedLayout = {
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
+    Component.HomeworkList(),
     Component.Breadcrumbs(),
-    Component.ArticleTitle(),
     Component.TagList(),
-    Component.ContentMeta()
+    Component.ArticleTitle(),
+    Component.ContentMeta(),
   ],
   left: [
     Component.PageTitle(),
@@ -41,6 +42,7 @@ export const defaultContentPageLayout: PageLayout = {
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [
     Component.Breadcrumbs(),
+    Component.TagList(),
     Component.ArticleTitle(),
     Component.ContentMeta()
   ],

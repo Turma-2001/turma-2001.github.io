@@ -16,7 +16,7 @@ document.addEventListener("nav", () => {
 
   const themeChangeLabelLookup = {
     dark: "Tema claro",
-    light: "Tema escuro"
+    light: "Tema escuro",
   }
 
   const switchTheme = (e: Event) => {
@@ -52,31 +52,10 @@ document.addEventListener("nav", () => {
     toggleSwitch.checked = true
   }
 
-  themeText.innerText = themeChangeLabelLookup[currentTheme as 'light' | 'dark']
+  themeText.innerText = themeChangeLabelLookup[currentTheme as "light" | "dark"]
 
   const colorSchemeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)")
 
   colorSchemeMediaQuery.removeEventListener("change", themeChange)
   colorSchemeMediaQuery.addEventListener("change", themeChange)
 })
-
-// document.addEventListener("nav", () => {
-
-//   const userPref = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"
-//   const currentTheme = (localStorage.getItem("theme") ?? userPref) as 'light' | 'dark'
-
-
-//   // Listen for changes in prefers-color-scheme
-//   const colorSchemeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)")
-
-//   colorSchemeMediaQuery.addEventListener("change", (e) => {
-//     const newTheme = e.matches ? "dark" : "light"
-
-//     document.documentElement.setAttribute("saved-theme", newTheme)
-//     localStorage.setItem("theme", newTheme)
-
-//     themeText.innerText = themeChangeLabelLookup[currentTheme]
-
-//     emitThemeChangeEvent(newTheme)
-//   })
-// })

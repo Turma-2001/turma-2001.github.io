@@ -541,3 +541,9 @@ ol.overflow {
 ::-webkit-scrollbar-corner {
   background: none;
 }
+
+img,
+iframe,
+svg {
+  max-width: 100%;
+}
