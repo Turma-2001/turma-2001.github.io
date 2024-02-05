@@ -8,10 +8,13 @@ date: 1706648007
 description: Lista de materiais básicos que usaremos nas aulas de arte
 ---
 ## Lista dos Materiais Básicos
-1. Caneta Corretivo
-2. Canetas Pretas de Gel(plural)
-3. Marca Textos
-4. Régua
-5. Cartucho de Grafite 0.5
-6. Cola de isopor
-7. Lápis de cor
+1. Folha Branco A4
+2. Régua $30cm$
+3. Lapis de cor
+4. Canetinha
+5. Giz de Cera
+6. Lápis 6'3 e 4B
+7. Cola de Isopor $90g$
+8. Tesoura
+9. Tinta Guache
+10. Pincel chato n°$08$ ou outro número
