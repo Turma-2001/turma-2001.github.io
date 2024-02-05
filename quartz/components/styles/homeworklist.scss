@@ -28,11 +28,13 @@ active-homeworks {
             display: flex;
             align-items: center;
 
+            background-clip: text !important;
+            background: linear-gradient(140deg, #D2A8FF 1.09%, #F778BA 32.58%, #FF7B72 44.96%);
+
             i, h1 {
                 -webkit-text-fill-color: transparent;
-
-                background-clip: text !important;
-                background: linear-gradient(140deg, #D2A8FF 12.09%, #F778BA 42.58%, #FF7B72 84.96%);
+                color: transparent;
+                background: none;
 
                 font-family: var(--headerFont);
                 font-weight: 800;
@@ -42,7 +44,10 @@ active-homeworks {
                 font-size: 1.75rem;
                 margin-right: 8px;
 
-                animation: hourglass-anim 2s infinite ease-in-out;
+                // TODO: fix this to work properly on chromium-based browsers.
+                //       for some reason, chromium-based browsers when you have a 'text-fill-color' set to transparent
+                //       will not render if the 'transform' property is used in keyframes, huh, weird.
+                -moz-animation: hourglass-anim 2s infinite ease-in-out;
             }
 
             h1 {
