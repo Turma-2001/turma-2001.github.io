@@ -4,11 +4,6 @@ banner: /static/school.png
 ---
 ::active-homeworks[]
 
-## Datas Importantes
-- 05/02/2024 Entrega: [[O Mundo Atual]] Atividade ([[Geografia]])
-- 05/02/2024 Entrega: [[Converte Temperatura Atividade]] ([[Física]])
-- 06/02/2024 Entrega: Desenho de arte dos quadradinhos ([[Artes]])
-
 ## Horário
 | Horários | Segunda | Terça | Quarta | Quinta | Sexta |
 | ---- | :--: | :--: | :--: | :--: | :--: |

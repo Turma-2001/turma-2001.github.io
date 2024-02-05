@@ -1,4 +1,4 @@
-type IndexEntryType = 'homework' | 'subject';
+type IndexEntryType = 'homework' | 'subject'
 type IndexEntry = {
     title: string
     content: string
@@ -8,8 +8,8 @@ type IndexEntry = {
     assessement?: number
     date?: number
     deadline?: number
-};
-type ContentIndex = { [key: string]: IndexEntry };
+}
+type ContentIndex = { [key: string]: IndexEntry }
 type HomeworkEntry = {
     name: string
     url: string
@@ -22,14 +22,13 @@ const fetchHomeworks = async () => {
     const homeworks: HomeworkEntry[] = []
 
     for (const [slug, fileData] of Object.entries(index)) {
-        if ((fileData.type ?? '') != 'homework' || !fileData.deadline) {
-            continue;
-        }
+        if ((fileData.type ?? '') != 'homework' || !fileData.deadline)
+            continue
 
         let currentDate = new Date()
         let deadlineDate = new Date(fileData.deadline * 1000)
 
-        let daysUntilDeadline = deadlineDate.getUTCDay() - currentDate.getUTCDay()
+        let daysUntilDeadline = deadlineDate.getDay() - currentDate.getDay()
 
         if (daysUntilDeadline < 0) {
             continue

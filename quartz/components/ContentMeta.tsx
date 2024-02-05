@@ -27,7 +27,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
       const segments: string[] = []
 
       if (fileData.dates) {
-        segments.push(formatDate(getDate(cfg, fileData)!, cfg.locale))
+        segments.push(formatDate(new Date(1000 * (fileData.frontmatter?.date ?? (Date.now() / 1000))), cfg.locale))
       }
 
       // Display reading time if enabled
