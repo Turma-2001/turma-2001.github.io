@@ -46,10 +46,14 @@ Como o tato é um método muito limitado(e até perigoso) para se determinar qua
 ## Fontes: Prof
 - **Imagens**
 	- *Imagem 1*
+	 
 	Por que o calor vai do “quente” para o “frio”? - Saber Atualizado. Disponível em: <https://www.saberatualizado.com.br/2016/09/por-que-o-calor-vai-do-quente-para-o.html>. Acesso em: 6 fev. 2024. 
 	- *Imagem 2*
+	
 	Equilíbrio térmico: definição, fórmula e exercícios. Disponível em: <https://www.preparaenem.com/fisica/equilibrio-termico.htm>. Acesso em: 6 fev. 2024. 
 	- *Imagem 3*
+	
 	Equilíbrio térmico: o que é, fórmula, exemplos. Disponível em: <https://brasilescola.uol.com.br/quimica/equilibrio-termico.htm>. Acesso em: 6 fev. 2024.
 	- *Imagem 4*
+	
 	SILVA, A. L. S. DA. Mudanças de Estado Físico - Físico-Química. Disponível em: <https://www.infoescola.com/fisico-quimica/mudancas-de-estado-fisico/>. Acesso em: 6 fev. 2024. 
