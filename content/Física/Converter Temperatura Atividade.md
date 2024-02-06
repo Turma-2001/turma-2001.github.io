@@ -7,7 +7,7 @@ assessement: 1
 date: 1706648007
 type: homework
 description: Atividade para converter um tipo de temperatura para outra
-deadline: 1707252807
+deadline: 1708463578
 ---
 # Atividade
 ## Faça a Conversão
