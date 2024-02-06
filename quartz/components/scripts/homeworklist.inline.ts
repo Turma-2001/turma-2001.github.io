@@ -26,35 +26,33 @@ const fetchHomeworks = async () => {
     }
 
     const index = await fetchData
-    const homeworks: HomeworkEntry[] = []
+    const currentTime = new Date()
 
-    for (const [slug, fileData] of Object.entries(index)) {
-        if ((fileData.type ?? '') != 'homework' || !fileData.deadline)
-            continue
 
-        let currentDate = new Date()
-        let deadlineDate = new Date(fileData.deadline * 1000)
+    return Object.entries(index).filter(([_, { deadline, type }]) => type == 'homework' && deadline != undefined)
+        .map(([path, { title, subject, deadline }]) => {
+            let difference = (deadline! * 1000) - Date.now()
 
-        let daysUntilDeadline = deadlineDate.getDay() - currentDate.getDay()
+            if (difference < 0)
+                return
 
-        if (daysUntilDeadline < 0 || (daysUntilDeadline == 0 && currentDate.getHours() > 12)) {
-            continue
-        }
+            let daysUntilDeadline = Math.ceil(difference / (86400 * 1000))
 
-        let text = `Entrega ${daysToStringMapping[daysUntilDeadline as 0 | 1 | 2] ?? `em ${daysUntilDeadline} dias`}`
+            if (daysUntilDeadline == 1 && currentTime.getUTCHours() > 12)
+                return
 
-        homeworks.push({
-            name: fileData.title,
-            subject: fileData.subject ?? 'Sem assunto associado',
-            deadlineEnd: text,
-            url: slug,
-            daysUntilDeadline
+            let text = `Entrega ${daysToStringMapping[daysUntilDeadline as 0 | 1 | 2] ?? `em ${daysUntilDeadline} dias`}`
+
+            return {
+                name: title,
+                subject: subject ?? 'Sem assunto associado',
+                deadlineEnd: text,
+                url: path,
+                daysUntilDeadline
+            } as HomeworkEntry
         })
-    }
-
-    homeworks.sort((a, b) => a.daysUntilDeadline - b.daysUntilDeadline)
-
-    return homeworks
+        .filter(a => a != null)
+        .sort((a, b) => a!.daysUntilDeadline - b!.daysUntilDeadline) as HomeworkEntry[]
 }
 
 const createHomeworkElement = (entry: HomeworkEntry): HTMLLIElement => {
@@ -98,11 +96,12 @@ class ActiveHomeworksComponent extends HTMLElement {
     }
 
     async connectedCallback() {
-        let homeworks = await fetchHomeworks()
         let baseElement = document.createElement('ul')
         let titleContainer = document.createElement('div')
         let titleNode = document.createElement('h1')
         let iconNode = document.createElement('i')
+
+        baseElement.classList.add('active-homeworks', 'homework-list')
 
         titleContainer.classList.add('title')
 
@@ -114,7 +113,9 @@ class ActiveHomeworksComponent extends HTMLElement {
 
         baseElement.appendChild(titleContainer)
 
-        baseElement.classList.add('active-homeworks', 'homework-list')
+        this.appendChild(baseElement)
+
+        let homeworks = await fetchHomeworks()
 
         if (homeworks.length == 0) {
             let noHomeworkAvailable = document.createElement('p')
@@ -130,8 +131,6 @@ class ActiveHomeworksComponent extends HTMLElement {
 
             baseElement.appendChild(element)
         }
-
-        this.appendChild(baseElement)
     }
 
 }
