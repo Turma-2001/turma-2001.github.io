@@ -22,7 +22,10 @@ function TableOfContents({ fileData, displayClass }: QuartzComponentProps) {
   return (
     <div class={classNames(displayClass, "toc")}>
       <button type="button" id="toc" class={fileData.collapseToc ? "collapsed" : ""}>
-        <h3>Tabela de Conteúdos</h3>
+        <div class='title-container'>
+          <i class='bx bx-list-ul' ></i>
+          <h3>Tabela de Conteúdos</h3>
+        </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"

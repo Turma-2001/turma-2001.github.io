@@ -94,6 +94,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
     flex-direction: column;
 
     padding: 0 8px;
+    margin-bottom: 8px;
 
     .content-info {
       background: var(--lightgray);

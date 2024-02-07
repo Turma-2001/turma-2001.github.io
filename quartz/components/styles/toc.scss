@@ -1,17 +1,37 @@
+.toc {
+  padding: 0 8px;
+}
+
 button#toc {
-  background-color: transparent;
+  background-color: var(--lightgray);
+  width: 100%;
+
   border: none;
   text-align: left;
   cursor: pointer;
   padding: 0;
   color: var(--dark);
   display: flex;
+  justify-content: space-between;
+
+  padding: 4px 8px;
+
   align-items: center;
 
-  & h3 {
-    font-size: 1rem;
-    display: inline-block;
-    margin: 0;
+  & .title-container {
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: 1.15rem;
+      margin-right: 6px;
+    }
+
+    h3 {
+      font-size: 1rem;
+      display: inline-block;
+      margin: 0;
+    }
   }
 
   & .fold {
@@ -23,6 +43,16 @@ button#toc {
   &.collapsed .fold {
     transform: rotateZ(-90deg);
   }
+  
+  &:not(.collapsed) {
+    border-radius: 8px 8px 0 0;
+    animation: add-border 0.3s ease;
+  }
+
+  &.collapsed {
+    border-radius: 8px;
+    animation: remove-border 0.5s ease;
+  }
 }
 
 #toc-content {
@@ -31,21 +61,36 @@ button#toc {
   max-height: none;
   transition: max-height 0.5s ease;
   position: relative;
+  background: var(--lightgray);
+  border-radius: 0 0 8px 8px;
+
+  padding: 4px 8px;
 
   &.collapsed > .overflow::after {
     opacity: 0;
   }
 
+  &.collapsed {
+    padding: 0 8px;
+  }
+
   & ul {
     list-style: none;
-    margin: 0.5rem 0;
     padding: 0;
+
+    &.overflow::after {
+      all: unset;
+    }
+
+    &.overflow {
+      margin: 0;
+    }
 
     & > li > a {
       color: var(--dark);
       opacity: 0.35;
       transition: 0.5s ease opacity,
-      0.3s ease color;
+                  0.3s ease color;
 
       &.in-view {
         opacity: 0.75;
@@ -57,5 +102,25 @@ button#toc {
     & .depth-#{$i} {
       padding-left: calc(1rem * #{$i});
     }
+  }
+}
+
+@keyframes remove-border {
+  0% {
+    border-radius: 8px 8px 0 0;
+  }
+
+  100% {
+    border-radius: 8px 8px 0 0;
+  }
+}
+
+@keyframes add-border {
+  0% {
+    border-radius: 8px;
+  }
+
+  100% {
+    border-radius: 8px 8px 0 0;
   }
 }

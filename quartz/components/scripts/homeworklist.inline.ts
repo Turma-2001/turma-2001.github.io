@@ -41,7 +41,8 @@ const fetchHomeworks = async () => {
             if (daysUntilDeadline == 1 && currentTime.getUTCHours() > 12)
                 return
 
-            let text = `Entrega ${daysToStringMapping[daysUntilDeadline as 0 | 1 | 2] ?? `em ${daysUntilDeadline} dias`}`
+            let text = `Entrega ${daysToStringMapping[daysUntilDeadline as 0 | 1 | 2] ??
+                       `em ${daysUntilDeadline == 13 ? '12 + 1' : daysUntilDeadline} dias`}`
 
             return {
                 name: title,
