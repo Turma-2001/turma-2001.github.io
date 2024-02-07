@@ -6,3 +6,5 @@ tags:
 ---
 
 **História: Desvendando os Mistérios do Passado!** Profª: Aleckssandra Guerreiro
+
+Bem-vindo(a) ao fascinante mundo da História, onde vamos viajar através do tempo e desvendar os acontecimentos que moldaram a humanidade! Vamos explorar as sociedades passadas, as figuras históricas que marcaram época e compreender como o passado influencia nosso presente.
