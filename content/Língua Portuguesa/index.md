@@ -5,3 +5,5 @@ tags:
   - Português
 ---
 **Português: A Arte das Palavras e da Comunicação!** Profª: Andréa Breading
+
+Bem-vindo(a) ao mundo da língua portuguesa, onde as palavras ganham vida e a comunicação se torna uma poderosa ferramenta. Vamos explorar as nuances da nossa língua materna, aprimorar nossas habilidades de leitura e escrita, e descobrir a riqueza das histórias contadas por grandes escritores.
