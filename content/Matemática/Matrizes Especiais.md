@@ -6,6 +6,7 @@ assessement: 1
 type: subject
 subject: Matemática
 date: 1707361200
+description: Sobre tipos de Matrizes
 ---
 - **Matriz Linha:** Quando apresenta apenas uma linha
 *Ex:*
