@@ -8,6 +8,7 @@ subject: Filosofia
 assessement: 1
 date: 1706842800
 type: subject
+deadline: 1707447600
 ---
 
 # Racionalidade Filosofica e Ciêntifica
