@@ -7,7 +7,7 @@ description: Assunto de Filosofia
 subject: Filosofia
 assessement: 1
 date: 1706842800
-type: subject
+type: homework
 deadline: 1707447600
 ---
 
