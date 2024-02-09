@@ -8,7 +8,7 @@ type: subject
 description: Estimativa de todo o conteúdo que será lecionado nesse 2° ano no ensino médio
 ---
 # Resumo do Conteúdo Programático Anual:
-1. Taxonomia e Nomenclatura biológica;
+1. [[Taxonomia e Nomenclatura Biológica]];
 2. Vírus;
 3. Reino Monera: **ex:** Bactérias e Cianobactérias e Arqueas;
 4. Reino Protoctista ou Protista: **ex:** Protozoários e Algas;
