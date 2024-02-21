@@ -15,6 +15,8 @@ date: 1708398000
 
 <img class="follow-theme" src="/static/diagram-20240220.svg"></img>
 
+![atomo estrutura](https://static.significados.com.br/foto/tomo-significados.jpg)
+
 *Ex:* $Na^{23}_{11}$ , $Mg^{24}_{12}$ , $Cl^{35,5}_{17}$ , $O^{16}_{8}$
 
 **Massa Molecular(M.M):**
