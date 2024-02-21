@@ -13,21 +13,6 @@ date: 1708398000
 > [!tip] Dica
 > O **número atômico** pode estar em casos tanto na parte de cima do elemento quanto em baixo, mas lembre-se que a **massa atômica** será sempre maior que o **número atômico**.
 
-$$
-\textbf{Átomo}
-\begin{cases}
-\textit{Núcleo} \\
-\textit{Elétrons}(-)
-\end{cases}
-$$
-$$
-\textbf{Núcleo}
-\begin{cases}
-\textit{Prótons}(+) \\
-\textit{Nêutrons}(0)
-\end{cases}
-$$
-
 <img class="follow-theme" src="/static/diagram-20240220.svg"></img>
 
 *Ex:* $Na^{23}_{11}$ , $Mg^{24}_{12}$ , $Cl^{35,5}_{17}$ , $O^{16}_{8}$
