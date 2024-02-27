@@ -5,7 +5,7 @@ tags:
 assessement: 1
 type: homework
 subject: Química
-date: 1708570800
+date: 1709002800
 ---
 ## Cálculo de Massa Molecular
 *Ex1:*
