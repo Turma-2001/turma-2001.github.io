@@ -6,15 +6,15 @@ banner: /static/school.png
 
 
 ## Horário
-| Horários | Segunda | Terça | Quarta | Quinta | Sexta |
-| ---- | :--: | :--: | :--: | :--: | :--: |
-| 7:15/8:00 | **GEOGRAFIA** |**QUÍMICA** | **SOCIOLOGIA** | **LÍNGUA PORTUGUESA** | **EDUCAÇÃO AMBIENTAL** |
-| 8:00/8:45 | **GEOGRAFIA** | **QUÍMICA** | **MATEMÁTICA** | **MATEMÁTICA** | **BIOLOGIA** |
-| 8:45/9:30 | **LÍNGUA PORTUGUESA** | **INGLÊS** | **HISTÓRIA** | **MATEMÁTICA** | **BIOLOGIA** |
-| 9:30/9:45 | INTERVALO | INTERVALO | INTERVALO | INTERVALO | INTERVALO |
-| 9:45/10:30 | **LÍNGUA PORTUGUESA** | **FÍSICA** | **HISTÓRIA** | **EDUCAÇÃO FÍSICA** | **ELETIVA** |
-| 10:30/11:15 | **MATEMÁTICA** | **FÍSICA** | **LÍNGUA PORTUGUESA** | **ITINERÁRIOS AMAZÔNICOS** | **PROJETO DE VIDA** |
-| 11:15/12:00 | **MATEMÁTICA** | **ARTES** | **LÍNGUA PORTUGUESA** | **ITINERÁRIOS AMAZÔNICOS** | **FILOSOFIA** |
+| Horários    |        Segunda        |    Terça    |        Quarta         |           Quinta           |         Sexta          |
+| ----------- | :-------------------: | :---------: | :-------------------: | :------------------------: | :--------------------: |
+| 7:15/8:00   |     **GEOGRAFIA**     | **QUÍMICA** |    **SOCIOLOGIA**     | **ITINERÁRIOS AMAZÔNICOS** | **EDUCAÇÃO AMBIENTAL** |
+| 8:00/8:45   |     **GEOGRAFIA**     | **QUÍMICA** |    **MATEMÁTICA**     | **ITINERÁRIOS AMAZÔNICOS** |      **BIOLOGIA**      |
+| 8:45/9:30   | **LÍNGUA PORTUGUESA** | **INGLÊS**  |     **HISTÓRIA**      |       **MATEMÁTICA**       |      **BIOLOGIA**      |
+| 9:30/9:45   |       INTERVALO       |  INTERVALO  |       INTERVALO       |         INTERVALO          |       INTERVALO        |
+| 9:45/10:30  | **LÍNGUA PORTUGUESA** | **FÍSICA**  |     **HISTÓRIA**      |       **MATEMÁTICA**       |      **ELETIVA**       |
+| 10:30/11:15 |    **MATEMÁTICA**     | **FÍSICA**  | **LÍNGUA PORTUGUESA** |   **LÍNGUA PORTUGUESA**    |  **PROJETO DE VIDA**   |
+| 11:15/12:00 |    **MATEMÁTICA**     |  **ARTES**  | **LÍNGUA PORTUGUESA** |    **EDUCAÇÃO FÍSICA**     |     **FILOSOFIA**      |
 
 ## Matérias Escolares
 | Ciências Humanas          | Ciências da Linguagem             | Ciências Exatas           |
