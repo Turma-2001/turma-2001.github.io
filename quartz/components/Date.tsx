@@ -14,7 +14,9 @@ export function getDate(cfg: GlobalConfiguration, data: QuartzPluginData): Date 
       `Field 'defaultDateType' was not set in the configuration object of quartz.config.ts. See https://quartz.jzhao.xyz/configuration#general-configuration for more details.`,
     )
   }
-  return data.dates?.[cfg.defaultDateType]
+  return new global.Date(
+    (data.frontmatter?.date ?? (data.dates?.[cfg.defaultDateType].getDate() ?? 0) / 1000) * 1000,
+  )
 }
 
 export function formatDate(d: Date, locale = "en-US"): string {
@@ -25,6 +27,6 @@ export function formatDate(d: Date, locale = "en-US"): string {
   })
 }
 
-export function Date({ date, locale }: Props) {
+export const Date = ({ date, locale }: Props) => {
   return <>{formatDate(date, locale)}</>
 }

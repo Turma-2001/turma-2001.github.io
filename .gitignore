@@ -1,4 +1,5 @@
 .DS_Store
+audit/
 node_modules
 public
 prof
@@ -12,3 +13,4 @@ replit.nix
 .idea/
 templates/
 modelo de nota
+.gitignore/

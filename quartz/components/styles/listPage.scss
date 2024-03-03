@@ -18,6 +18,19 @@ li.section-li {
     display: flex;
     flex-direction: column;
 
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .type {
+        padding: 0;
+        margin: 0;
+        font-family: var(--headerFont);
+        font-weight: 900;
+      }
+    }
+
     .information {
       display: flex;
       align-items: center;

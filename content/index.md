@@ -2,8 +2,9 @@
 title: Página inicial
 banner: /static/school.png
 ---
-::active-homeworks[]
 
+::active-homeworks[]
+::latest-contents[]
 
 ## Horário
 | Horários    |        Segunda        |    Terça    |        Quarta         |           Quinta           |         Sexta          |

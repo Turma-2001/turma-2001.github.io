@@ -20,6 +20,7 @@ import MobileOnly from "./MobileOnly"
 import RecentNotes from "./RecentNotes"
 import Breadcrumbs from "./Breadcrumbs"
 import HomeworkList from "./HomeworkListComponent"
+import LatestContents from "./LatestContents"
 
 export {
   ArticleTitle,
@@ -43,5 +44,6 @@ export {
   RecentNotes,
   NotFound,
   Breadcrumbs,
-  HomeworkList
+  HomeworkList,
+  LatestContents
 }
