@@ -98,7 +98,7 @@ class ActiveHomeworksComponent extends HTMLElement {
     }
 
     async connectedCallback() {
-        let homeworks = await fetchHomeworks()
+        let homeworksPromise = fetchHomeworks()
         let baseElement = document.createElement('ul')
         let titleContainer = document.createElement('div')
         let titleNode = document.createElement('h1')
@@ -116,6 +116,10 @@ class ActiveHomeworksComponent extends HTMLElement {
 
         baseElement.classList.add('active-homeworks', 'homework-list')
 
+        this.appendChild(baseElement)
+
+        const homeworks = await homeworksPromise
+
         if (homeworks.length == 0) {
             let noHomeworkAvailable = document.createElement('p')
 
@@ -130,8 +134,6 @@ class ActiveHomeworksComponent extends HTMLElement {
 
             baseElement.appendChild(element)
         }
-
-        this.appendChild(baseElement)
     }
 
 }

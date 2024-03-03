@@ -59,7 +59,8 @@ const config: QuartzConfig = {
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
       Plugin.Homeworks(),
-      Plugin.SVGScaler()
+      Plugin.LatestContents(),
+      Plugin.SVGScaler(),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [

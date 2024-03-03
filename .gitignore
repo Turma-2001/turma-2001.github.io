@@ -1,5 +1,5 @@
 .DS_Store
-.gitignore
+audit/
 node_modules
 public
 prof
@@ -11,3 +11,5 @@ private/
 replit.nix
 .trash/
 .idea/
+content/
+.gitignore/

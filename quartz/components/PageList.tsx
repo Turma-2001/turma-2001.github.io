@@ -38,17 +38,31 @@ export function PageList({ cfg, fileData, allFiles, limit }: Props) {
   return (
     <ul class="section-ul">
       {list.map((page) => {
+        const typeToDisplayTextMapping = {
+          subject: 'Assunto',
+          homework: 'Atividade'
+        }
+
+        type TypeDisplayMapping = 'subject' | 'homework'
+
         const title = page.frontmatter?.title
         const tags = page.frontmatter?.tags ?? []
+        const type = page.frontmatter?.type as TypeDisplayMapping
 
         return (
           <li class="section-li">
             <div class="section">
-              <h3>
-                <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
-                  {title}
-                </a>
-              </h3>
+              <div class="title">
+                <h3>
+                  <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
+                    {title}
+                  </a>
+                </h3>
+
+                <p class='type'>
+                  {typeToDisplayTextMapping[type]}
+                </p>
+              </div>
 
               <div class="information">
                 <ul class="tags">
