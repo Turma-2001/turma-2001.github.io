@@ -35,18 +35,19 @@ Apresenta mais de uma fase.
 ![exemplo](https://static.todamateria.com.br/upload/gu/ae/guaeacucar-0-cke.jpg?auto_optimize=low)
 
 ### Classificação das Soluções
-1. Quanto ao Estado Físico:
-	- **Solução Sólida:** Quando o soluto e o solvente são sólidos
-		- *Ex:* Aliança de Ouro
-	- **Solução Líquida:** Quando o solvente é líquido, e o soluto pode ser sólido ou líquido. 
-		- *Ex:* Soro Caseiro
-	- **Solução Gasosa:** É aquela em que, tanto o soluto como o solvente são gasosos.
-		- *Ex:* Ar atmosférico
-2. Quanto a condução de ocorrente elétrica:
-	- **Solução Iônica ou Eletrolítica:** Conduz corrente elétrica.
-		- *Ex:* Água + Sal
-	- **Solução Molecular ou Não-Eletrolítica:** Não conduz corrente elétrica.
-		- *Ex:* Água + Açúcar
+**1** Quanto ao Estado Físico:
+- **Solução Sólida:** Quando o soluto e o solvente são sólidos
+	- *Ex:* Aliança de Ouro
+- **Solução Líquida:** Quando o solvente é líquido, e o soluto pode ser sólido ou líquido. 
+	- *Ex:* Soro Caseiro
+- **Solução Gasosa:** É aquela em que, tanto o soluto como o solvente são gasosos.
+	- *Ex:* Ar atmosférico
+
+**2** Quanto a condução de ocorrente elétrica:
+- **Solução Iônica ou Eletrolítica:** Conduz corrente elétrica.
+	- *Ex:* Água + Sal
+- **Solução Molecular ou Não-Eletrolítica:** Não conduz corrente elétrica.
+	- *Ex:* Água + Açúcar
 
 
 
