@@ -27,9 +27,13 @@ A=\begin{vmatrix}
 $$
 
 $$2\cdot (-1)^{1+1}\cdot \begin{vmatrix} 2 & 3 \\ -1 & 2 \end{vmatrix} -3 \cdot (-1)^{1+2}\cdot \begin{vmatrix} 1 & 3 \\ 1 & 2 \end{vmatrix} +0\cdot (-1)^{1+3}\cdot \begin{vmatrix} 1 & 2 \\ 1 & -1 \end{vmatrix}=$$
+
 $$2\cdot \begin{vmatrix} 2 & 3 \\ -1 & 2 \end{vmatrix}+3\cdot \begin{vmatrix} 1 & 3 \\ 1 &2 \end{vmatrix}=$$
+
 $$2\cdot (4+3)+3\cdot (2-3)=$$
+
 $$2\cdot (7)+3\cdot (-1)=$$
+
 $$14-4=11$$
 
 
