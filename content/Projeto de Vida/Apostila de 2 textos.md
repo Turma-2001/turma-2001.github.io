@@ -8,31 +8,31 @@ subject: Projeto de Vida
 date: 1709305200
 deadline: 1710514800
 ---
-> [!quote] O Caminho Não Trilhado - Robert Frost
-> A estrada se partiu no bosque amarelado 
-> E lamentando não poder seguir por ambas 
-> E ser apenas um, fiquei ali parado 
-> E olhei uma das vias, o olhar alongado, 
-> Até que ela fugisse na curva entre as ramas;
+> [!quote] O Caminho Não Trilhado - Robert Frost <br>
+> A estrada se partiu no bosque amarelado  <br>
+> E lamentando não poder seguir por ambas  <br>
+> E ser apenas um, fiquei ali parado  <br>
+> E olhei uma das vias, o olhar alongado,  <br>
+> Até que ela fugisse na curva entre as ramas; <br>
 > 
-> Então tomei a outra, possível também, 
-> E sendo ela talvez a mais convidativa, 
-> Porque clamava a grama pelos pés de alguém, 
-> Mesmo que, em relação a isso, outros vaivéns 
-> A tivessem gastado na mesma medida
+> Então tomei a outra, possível também,  <br>
+> E sendo ela talvez a mais convidativa,  <br>
+> Porque clamava a grama pelos pés de alguém,  <br>
+> Mesmo que, em relação a isso, outros vaivéns  <br>
+> A tivessem gastado na mesma medida <br>
 > 
-> E que, àquela manhã, naquelas duas vias 
-> Houvesse ainda tantas folhas por pisar. 
-> Ah, deixei a primeira para um outro dia! 
-> Mas, se um caminho sempre a outros levaria, 
-> Duvidei de que um dia eu pudesse voltar.
+> E que, àquela manhã, naquelas duas vias <br>
+> Houvesse ainda tantas folhas por pisar. <br>
+> Ah, deixei a primeira para um outro dia!  <br>
+> Mas, se um caminho sempre a outros levaria, <br>
+> Duvidei de que um dia eu pudesse voltar. <br>
 > 
-> Mais à frente hei de dar, saudoso, o meu relato; 
-> Entre o passado e mim, uma distância imensa:
+> Mais à frente hei de dar, saudoso, o meu relato;  <br>
+> Entre o passado e mim, uma distância imensa: <br>
 > 
-> A estrada se partiu no bosque amarelado - 
-> Tomei dos dois caminhos o menos trilhado, 
-> E justamente isso fez a diferença
+> A estrada se partiu no bosque amarelado -  <br>
+> Tomei dos dois caminhos o menos trilhado,  <br>
+> E justamente isso fez a diferença <br>
 
 > [!quote] Cântigo Negro - José Régio
 > “Vem por aqui” — dizem-me alguns com os olhos doces  
